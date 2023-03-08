@@ -1,0 +1,60 @@
+body{
+    background: #22313f;
+}
+.login h1 a{
+    background: url(../images/twlogo.png) no-repeat center center / cover;
+    height: 90px;
+}
+.login #backtoblog, .login #nav {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0;
+    width: 45%;
+    float: left;
+}
+.login #nav{
+    margin-top: 16px !important;
+}
+.login #backtoblog{
+    float: right;
+    text-align: right;
+}
+.login form{
+    border: 10px solid #cc605a;
+}
+.wp-core-ui .button-primary{
+    background: #cc605a;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+}
+.wp-core-ui .button-primary:focus{
+    border-color: #cc605a;
+    box-shadow: 0 0 2px rgba(204, 96, 90, 0.8);
+    background: #cc605a;
+}
+.wp-core-ui .button-primary:hover{
+    background: #22313F;
+    box-shadow: none;
+}
+a{
+
+    transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+}
+a:hover{
+    color: #cc605a !important;
+}
+input[type="checkbox"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus {
+    border-color: #cc605a;
+    box-shadow: 0 0 2px rgba(204, 96, 90, 0.8);
+}
