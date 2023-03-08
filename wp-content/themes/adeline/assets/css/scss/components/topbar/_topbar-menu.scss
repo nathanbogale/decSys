@@ -1,0 +1,51 @@
+/**
+ * Top Bar Menu
+ */
+
+#dpr-top-bar-nav,
+#dpr-top-bar-nav > li {
+  display: inline-block;
+}
+
+
+#dpr-top-bar-nav > ul > li {
+  display: inline-block;
+  float: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a .nav-arrow {
+    margin-left: 4px;
+    margin-right: 0;
+  }
+}
+
+.dpr-top-bar-menu.dropdown-menu .sub-menu {
+	border:none;
+	margin-top:8px;
+}
+
+.dpr-top-bar-menu.dropdown-menu .sub-menu li a {
+	font-size:12px;
+	font-weight:400;
+}
+
+
+/*------------------------------------*
+  Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+  #dpr-top-bar #dpr-top-bar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+
+  #dpr-top-bar-nav {
+    float: none;
+    text-align: center;
+  }
+  
+}

@@ -1,0 +1,60 @@
+/* ----------------------------------------------------------------
+      [ * Fancy Styles ]
+-----------------------------------------------------------------*/
+
+
+
+/* Fancy Style 1 */
+
+
+  .exp-img .img {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+     }
+    .exp-img .img:after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+      background: rgba(255, 255, 255, 0.95);
+      z-index: -1; }
+    .exp-img .img .since {
+      position: absolute;
+      right: 70px;
+      top: 70px; }
+      .exp-img .img .since span {
+        display: block;
+        color: #b19777;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1; }
+        .exp-img .img .since span:first-of-type {
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 2px; }
+    .exp-img .img .years {
+      position: absolute;
+      left: 70px;
+      bottom: 70px; }
+     .exp-img .img .years h2 {
+        font-size: 140px;
+        font-weight: 800;
+        background: url(../img/exp.jpg) no-repeat;
+        background-position: 18% 65%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        }
+      .exp-img .img .years h5 {
+        color: #b19777;
+        letter-spacing: 5px;
+        font-size: 20px; }
+
+ 

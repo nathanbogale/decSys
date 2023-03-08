@@ -1,0 +1,192 @@
+.subheader {
+  @include display-flex();
+  @include align-items( center );
+  position: relative;
+  background-color: $color-12;
+  padding: 50px 0;
+  min-height:350px;
+  width: 100%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.header-overlapping-used .subheader {
+  padding: 120px 0 36px 0;
+}
+
+.subheader-inner {
+    z-index:2;
+  }
+
+
+.subheader-title {
+  display: block;
+  font-size: 51px;
+  line-height: 1.15em;
+  font-weight: 700;
+  margin: 0;
+  color: $color-11;
+  z-index: 2;
+	word-wrap: break-word;
+}
+
+
+.subheader-subtitle {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+	margin: 15px 0 0;
+  	color:rgba( $color-11, .8 );
+      z-index: 2;
+}
+.centered-subheader  .subheader-inner {
+    text-align: center;
+  }
+
+.centered-subheader .subheader-title,
+ {
+  max-width: 100% !important;
+    padding:0 13%;
+
+}
+
+/**
+ * Subheader Centered
+ */
+.centered-subheader {
+  text-align: center;
+
+}
+
+.subheader-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/**
+ * Breadcrumbs
+ */
+.dpr-adeline-breadcrumbs {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  max-width: 50%;
+  height: 32px;
+  line-height: 32px;
+  margin-top: -16px;
+  font-size: 13px;
+  color: #292933;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  .dpr-icon-home {
+  	margin-right:6px;	
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      &:after {
+        content: '/';
+        margin: 0 6px;
+		color: #292933;
+        display: inline-block;
+        font: normal normal normal 14px/1 dpr-icomoon;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  .breadcrumb-title {
+    margin-right: 5px;
+  }
+}
+
+.dpr-adeline-breadcrumbs.position-under-title {
+  position: inherit;
+  top: auto;
+  right: auto;
+  margin-top: 15px;
+  max-width: 100%;
+}
+
+
+
+/*------------------------------------*
+  All Devices under 960px
+*------------------------------------*/
+@media only screen and (max-width: 959px) {
+      
+  /* page title */
+  body.has-breadcrumbs .subheader-title {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+}
+
+/*------------------------------------*
+  Tablet Portrait
+*------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+  /* page header */
+  .dpr-adeline-breadcrumbs {
+    position: inherit;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 0;
+  }
+  
+}
+
+/*------------------------------------*
+  Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+  .subheader-with-background .subheader-title {
+    font-size: 36px;
+  }
+
+  .centered-subheader .subheader-title {
+    font-size: 24px;
+  }
+
+  .centered-subheader .subheader-subtitle {
+    font-size: 14px;
+  }
+
+  
+  /* breadcrumbs */
+  body.has-breadcrumbs .subheader-title {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .dpr-adeline-breadcrumbs {
+    display: none;
+  }
+  
+}

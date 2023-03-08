@@ -1,0 +1,44 @@
+/**
+ * Single Post
+ */
+.single {
+	.thumbnail {
+		position: relative;
+		margin-bottom: 30px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.entry-title {
+		font-size: 30px;
+	    padding: 0 0 5px;
+	    margin: 0 ;
+		word-wrap: break-word;
+		font-weight:700;
+	}
+}
+.single.single-post.has-featured-img-bg {
+	.thumbnail{
+		display:none;
+	}
+	ul.meta {
+		margin-top:0;
+	}
+}
+
+/*------------------------------------*
+	Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+	.single-post.media-above-content .thumbnail {
+		margin-bottom: 25px;
+	}
+
+	.single-post .entry-title {
+		font-size: 26px;
+	}
+
+}

@@ -1,0 +1,131 @@
+
+
+/*----------Progress bar Style 1----------*/ 
+.avo-progress-bar.style-1 {
+	&.rtl{
+		h6{
+			font-weight: 600 !important;
+			font-size: 15px !important;
+			letter-spacing: 0 !important;
+		}
+		.progres{
+			right: 0 !important;
+			&:after{
+			    right: initial !important;
+    			left: 10px !important;
+			}
+			&:before{
+			    right: initial !important;
+    			left: 15px !important;
+			}
+		}
+	}
+	.skills-box {
+		.skill-item {
+			margin-bottom: 50px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		h6 {
+			font-size: 13px;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 10px;
+			
+		}
+
+		.skill-progress {
+			height: 7px;
+			background-color: rgba(255,255,255,.05);
+			position: relative;
+
+			.progres {
+				position: absolute;
+				height: 100%;
+				width: 0;
+				top: 0;
+				left: 0;
+				background-color: $primary-color;
+				transition: all 1.5s;
+
+				&:after {
+					content: attr(data-value);
+					position: absolute;
+					right: 10px;
+					top: -45px;
+					padding: 7px 15px;
+					border-radius: 5px;
+					background: $primary-color;
+					color: #111;
+					font-size: 12px;
+					font-weight: 600;
+					line-height: 1.5;
+				}
+
+				&:before {
+					content: '';
+					width: 0;
+					height: 0;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-top: 8px solid $primary-color;
+					position: absolute;
+					right: 15px;
+					bottom: 14px;
+				}
+			}
+		}
+	}
+
+}
+// Light Mode
+.avo-progress-bar.style-1{
+	.skills-box{
+		.skill-progress{
+		    background-color: rgba(0, 0, 0, 0.05);
+		} 
+		h6{
+			color: #000;
+		}
+	}
+
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-progress-bar.style-1{
+	.skills-box{ 
+		.skill-progress{
+		    background-color: rgba(255, 255, 255, 0.05);
+		}
+		h6{
+			color: #fff;
+		}
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-progress-bar.style-1{
+		.skills-box{ 
+			.skill-progress{
+			    background-color: rgba(255, 255, 255, 0.05);
+			}
+			h6{
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

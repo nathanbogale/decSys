@@ -1,0 +1,49 @@
+#searchform-dropdown {
+	position: absolute;
+	right: 0;
+	background-color: $color-1;
+	border-top: 3px solid $color-5;
+	top: 100%;
+	padding: 15px;
+	width: 260px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) ;
+	visibility: hidden;
+	@include opacity( 0 );
+	transition: all 0.25s ease-in-out;
+	z-index: 10000;
+
+	input {
+		display: block;
+		background-color: transparent;
+		@include border-radius( 5px );
+		margin: 0;
+		font-size:12px;
+		line-height:18px;
+	}
+}
+
+.no-top-border #searchform-dropdown {
+	border: none;
+}
+#searchform-dropdown input::placeholder {
+	color:$color-11;
+	-webkit-appearance: none;
+}
+/* display search on click */
+#searchform-dropdown.show {
+	visibility: visible;
+	@include opacity( 1 );
+}
+
+#searchform-dropdown input::-webkit-input-placeholder {
+   opacity:0.7;
+}
+#searchform-dropdown input:-moz-placeholder {
+   opacity:0.7;
+}
+#searchform-dropdown input::-moz-placeholder {
+   opacity:0.7;
+}
+#searchform-dropdown input:-ms-input-placeholder {  
+   opacity:0.7;
+}

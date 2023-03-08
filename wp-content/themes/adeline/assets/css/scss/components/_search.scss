@@ -1,0 +1,77 @@
+.search-results article {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    .search-entry-inner {
+    	@include display-flex();
+        @include align-items( center );
+    }
+
+    .thumbnail {
+    	min-width: 120px;
+    	margin-right: 20px;
+
+    	img {
+    		@include border-radius( 2px );
+    		@include box-shadow( 0 0 5px rgba(0,0,0,0.3) );
+    	}
+    }
+
+    .search-entry-title {
+    	font-size: 28px;
+    	margin: 0 0 6px;
+    }
+
+    .search-entry-summary p:last-child {
+        margin-bottom: 0;
+    }
+
+    .search-entry-readmore {
+        a {
+            display: inline-block;
+            font-size: 14px;
+            position:relative;
+            line-height: 1;
+            font-weight:500;
+            text-transform:uppercase;
+            letter-spacing: 1px;
+            padding-right:10px;
+
+            &:after {
+                display: block;
+                background-color: $color-5;
+                position: absolute;
+                bottom: 1px;
+                right: 0;
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius:4px;
+                z-index:-1;
+                @include transition(all .25s ease-out);
+            }
+        }
+
+
+    }
+ .search-entry-readmore a:hover:after{
+            width: 100%;
+            opacity:0.4;
+        }
+
+    ul {
+    	list-style: none;
+    }
+}
+
+/*------------------------------------*
+    Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+    .search-results article .thumbnail {
+        display: none;
+    }
+
+}

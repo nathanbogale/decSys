@@ -1,0 +1,41 @@
+.hasCustomSelect {
+    width: 100%;
+    z-index: 2;
+}
+
+.theme-select {
+    position: relative;
+    border: 1px solid $color-10;
+    color: $color-11;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 45px 0 15px;
+    width: 100%;
+    z-index: 1;
+	@include border-radius (5px);
+
+    &:after {
+        font-family: 'dpr-icomoon';
+        content: '\f107';
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        height: 46px;
+        width: 46px;
+        font-size: 11px;
+        color:  $color-11;
+        border-left: 1px solid $color-10;
+        text-align: center;
+    }
+}
+.on-dark-bg, #footer-widgets {
+	.theme-select {
+	color: rgba(255,255,255,0.6);
+	border-color: rgba(255,255,255,0.2);
+		&:after {
+			border-left-color: rgba(255,255,255,0.2);
+			color: rgba(255,255,255,0.6);
+		}
+	}
+}

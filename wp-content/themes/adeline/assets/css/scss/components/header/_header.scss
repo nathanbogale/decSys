@@ -1,0 +1,131 @@
+#dpr-header {
+	position: relative;
+    width: 100%;
+	background-color: $color-1;
+    border-bottom: 1px solid $color-9;
+    z-index: 5;
+
+}
+
+#overlaping-header-wrapper {
+	position: relative;
+}
+
+.header-overlapping-used {
+	.dpr-adeline-sticky-header-holder {
+		height: auto !important;
+	}
+
+}
+
+.no-header-border #dpr-header {
+    border-bottom: none;
+}
+
+#dpr-header-inner {
+	position: relative;
+    height: 100%;
+}
+
+#dpr-logo {
+	float: left;
+	height: 100%;
+    display: table;
+}
+
+#dpr-logo #dpr-logo-inner {
+	display: table-cell;
+    vertical-align: middle;
+    height: 90px;
+
+    a {
+    	background-color: transparent !important;
+
+		img {
+			width: auto;
+			max-width:181px;
+			vertical-align: middle;
+		    @include transition( all .3s ease-in-out );
+		}
+
+    }
+}
+
+#dpr-logo a.dpr-logo-text {
+    font-size: 24px;
+	margin: 0;
+}
+
+.header-overlapping-used #dpr-header {
+	position: absolute;
+	top: 0;
+	background-color: transparent;
+	height: auto;
+	z-index: 9999;
+
+	#dpr-logo.has-transparent-logo {
+		.custom-logo-link {
+			display: none;
+		}
+
+		.transparent-logo-link {
+			display: block;
+		}
+	}
+}
+
+.is-sticky #dpr-header.transparent-header #dpr-logo.has-transparent-logo {
+	.custom-logo-link {
+		display: block;
+	}
+
+	.transparent-logo-link {
+		display: none;
+	}
+}
+
+/* Responsive logo */
+#dpr-logo.has-mobile-logo .mobile-logo-link {
+	display: none;
+}
+
+/* Overlapping header logos */
+#dpr-logo .custom-logo-link.dark, #dpr-logo .custom-logo-link.light, .middle-dpr-logo .custom-logo-link.dark, .middle-dpr-logo .custom-logo-link.light{
+	display:none;
+}
+.overlapping-style-dark #dpr-logo .custom-logo-link.default, .overlapping-style-dark .middle-dpr-logo .custom-logo-link.default {
+	display:none;
+}
+.overlapping-style-dark #dpr-logo .custom-logo-link.dark, .overlapping-style-dark .middle-dpr-logo .custom-logo-link.dark {
+	display:block;
+}
+.overlapping-style-light #dpr-logo .custom-logo-link.default, .overlapping-style-light .middle-dpr-logo .custom-logo-link.default {
+	display:none;
+}
+.overlapping-style-light #dpr-logo .custom-logo-link.light, .overlapping-style-light .middle-dpr-logo .custom-logo-link.light {
+	display:block;
+}
+
+/* Fullwidth header */
+
+.full-width-header #dpr-header-inner, .is-sticky #dpr-header.use-full-width-header #dpr-header-inner {
+	padding: 0 30px;
+}
+
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	/* logo */
+	#dpr-logo {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	
+}
+
+.overlapping-style-light .minimal-header .menu-bar .opener, .overlapping-style-light .minimal-header .menu-bar .opener:before, .overlapping-style-light .minimal-header .menu-bar .opener:after {
+	background-color: #fff;
+}

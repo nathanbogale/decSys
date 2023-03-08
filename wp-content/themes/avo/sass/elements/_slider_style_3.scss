@@ -1,0 +1,52 @@
+/*----------Slider Style 4----------*/
+
+.slider-style-3 {
+	.slider-text {
+		width: 100%;
+	}
+	.slider-subtitle {
+		color: #000;
+	    font-size: 18px;
+	    font-weight: 600;
+	    letter-spacing: 3px;
+	    margin: 0;
+	    text-transform: uppercase;
+	    margin-bottom: 10px;
+	}
+	.slider-title {
+		color: #000;
+	    font-size: 56px;
+	    letter-spacing: 0;
+	    margin: 0 0 25px;
+	    line-height: 1.4em;
+        font-weight: 600;
+        font-family: 'Barlow', sans-serif;
+	}
+	.custom-paging{
+		position: absolute;
+	    right: 40px;
+	    left: auto;
+	    bottom: 30px;
+	    top: auto;
+	    width: auto;
+	    color: #fff;
+	    li{
+	    	list-style-type: none;
+	    	letter-spacing: 8px;
+	    	font-size:14px;
+	    	font-weight:300;
+    	    -webkit-transition: all 0.5s ease-out;
+		    -moz-transition: all 0.5s ease-out;
+		    -ms-transition: all 0.5s ease-out;
+		    -o-transition: all 0.5s ease-out;
+
+	    	&::first-letter{
+	    		font-size:18px;
+	    	}
+	    }
+	    li:not(.slick-active){
+	      display:none;
+	    }
+	}
+		
+}

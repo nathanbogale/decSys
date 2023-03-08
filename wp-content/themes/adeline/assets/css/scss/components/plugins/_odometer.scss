@@ -1,0 +1,349 @@
+	/*Odometer couner style*/
+.odometer.odometer-auto-theme {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: top;
+	*vertical-align: auto;
+	position: relative;
+}
+.odometer.odometer-auto-theme {
+	*display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	*vertical-align: auto;
+	position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit {
+	*display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: top;
+	vertical-align: auto;
+	visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer {
+	display: inline;
+}
+.odometer-inside {
+	position: relative;
+	overflow: hidden;
+	padding: 0 3px;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner {
+	text-align: left;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+//	overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon {
+	display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner{
+	display: block;
+	-webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value {
+	display: block;
+	-webkit-transform: translateZ(0);
+	text-align: center;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value {
+	position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner {
+	-webkit-transition: -webkit-transform 2s;
+	-moz-transition: -moz-transform 2s;
+	-o-transition: -o-transform 2s;
+	transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+	-webkit-transition: -webkit-transform 2s;
+	-moz-transition: -moz-transform 2s;
+	transition: transform 2s;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.odometer-formatting-mark {display:none;}
+
+.dpr-counter {
+	position:relative;
+	text-align: center;
+	&.text-left {text-align: left;}
+	&.text-right {text-align: right;}
+	.units {
+		font-size: 60px;
+		line-height: 1;
+		color: inherit;
+	}
+	.counter-numbers  {
+		font-size: 60px;
+		line-height: 1;
+		div {
+			font-family: inherit;
+			font-size: inherit;
+			font-style: inherit;
+			font-weight: inherit;
+			text-transform: inherit;
+			line-height: inherit;
+			letter-spacing: inherit;
+			color: inherit;
+		}
+	}
+	.title-wrap {
+		.counter-title {
+			font-size: 20px;
+			line-height: 20px;
+			padding:0;
+			margin:0 0 10px;
+		}
+		.counter-subtitle {
+			font-size: 14px;
+			color: #424251;
+			line-height: 1;
+			padding-top: 5px;
+		}
+	}
+	.module-icon {
+		font-size: 48px;
+		color: #D3AE5F;
+		margin-bottom:10px;
+		span {
+			line-height: 1;
+		}
+		
+	}
+	.number-wrap {
+		position:relative;
+		padding-bottom: 5px;
+	}
+	.number-wrap-inner {
+		line-height: 1;
+	}
+	&.layout-1 {
+		.module-icon {
+			padding-bottom: 5px;
+		}
+	}
+	&.layout-2 {
+		.title-wrap {
+			padding-bottom: 10px;
+		}
+	}
+	&.layout-3 {
+		.title-wrap {
+			display:flex;
+			align-items: center;
+			justify-content:center;
+		}
+		.module-icon {
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 20px;
+		}
+		.title-wrap-inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left;
+		}
+		&.text-left {
+			.title-wrap {
+			justify-content:start;
+		}
+
+		}
+		&.text-right {
+			.title-wrap {
+			flex-direction: row-reverse;
+			justify-content: end;
+			}
+
+			.module-icon {
+				padding-right: 0;
+				padding-left: 20px;
+			}
+			.title-wrap-inner {
+				text-align: right;
+			}
+		}
+
+	}
+	&.layout-4 {
+		.counter-numbers {
+			font-size: 50px;
+		}
+		.units {
+			font-size: 50px;
+		}
+		.number-wrap {
+			padding-bottom: 0;
+		}
+		.head-wrap {
+			display:flex;
+			align-items: center;
+			justify-content:center;
+			margin-bottom:20px;
+		}
+		.module-icon {
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 20px;
+		}
+		.number-wrap {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		&.text-left {
+			.head-wrap {
+			justify-content:start;
+			}
+		}
+		&.text-right {
+			.head-wrap {
+			flex-direction: row-reverse;
+			justify-content: end;
+			}
+
+			.module-icon {
+				padding-right: 0;
+				padding-left: 20px;
+			}
+		}
+	}
+	&.layout-5 {
+		.head-wrap {
+		display:flex;
+		align-items: center;
+		}
+		.module-icon {
+		margin-bottom:10px;
+		}
+		.number-wrap {
+			padding-bottom: 0;
+		}
+		.title-wrap .subtitle {
+			padding-top: 0;
+		}
+		&.text-left {
+			.number-wrap {
+				padding-right: 20px;
+			}
+		}
+		&.text-center {
+			.head-wrap {
+			justify-content: center;
+			}
+			.title-wrap {
+			text-align:left;
+			}
+			.number-wrap {
+			margin-right:15px;
+			}
+		}
+		&.text-right {
+			.number-wrap {
+				padding-left: 20px;
+			}
+			.head-wrap {
+			display:flex;
+			flex-direction: row-reverse;
+			justify-content: end;
+			}
+
+		}
+	}
+	&.layout-6 {
+		.head-wrap {
+		display:flex;
+		align-items: center;
+		}
+		.number-wrap {
+			padding-bottom: 0;
+		}
+		.title-wrap .subtitle {
+			padding-top: 0;
+		}
+		&.text-left {
+			.number-wrap, .module-icon {
+				padding-right: 10px;
+			}
+		}
+		&.text-right {
+			.number-wrap, .module-icon {
+				padding-left: 10px;
+			}
+			.head-wrap {
+			display:flex;
+			flex-direction: row-reverse;
+			justify-content: end;
+			}
+
+		}
+	}
+	&.layout-7 {
+		padding-top: 25px;
+		.module-icon {
+			position:absolute;
+			top: 50%;
+			width: 100%;
+			font-size: 110px;
+			-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		.title-wrap {
+			position:relative;
+		}
+		.number-wrap {
+			width: 100%;
+		}
+	}
+	&.layout-8 {
+		padding-top: 25px;
+		.number-wrap {
+			position:absolute;
+			top: 50%;
+			width: 100%;
+			font-size: 110px;
+			line-height:110px;
+			-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		.counter-numbers {
+			font-size:110px;
+			color:#f1f2f4
+		}
+		.title-wrap {
+			position:relative;
+		}
+		.module-icon{
+			width: 100%;
+		}
+	}
+}

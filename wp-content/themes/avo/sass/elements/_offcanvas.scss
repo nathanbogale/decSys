@@ -1,0 +1,125 @@
+/*----------Offcanvas Style 2----------*/
+.avo-offcanvas.style-2{
+	text-align: right;
+	.menu-icon{
+		margin-left: auto;
+		cursor: pointer;
+	    z-index: 4;
+    	position: relative;
+    	display: inline-block;
+
+		&:hover{
+
+			.text{
+				
+				.char {
+					animation: fadeInUp .3s cubic-bezier(.3, 0, .7, 1) both;
+					animation-delay: calc(30ms * var(--char-index));
+				}
+			}
+		} 
+
+		.text{
+			font-size: 13px;
+			font-weight: 500;
+			padding-left: 15px;
+			position: relative;
+			
+			.word{
+				transition: all .4s;
+				transition-delay: .6s;
+			}
+			&.o{
+				display:initial ;
+			}
+			&.c{
+				display:none;
+			}
+
+			&.open{
+
+				&.o{
+					display:none;
+					transition-delay: .6s;
+				}
+				&.c{
+					display:initial ;
+					transition-delay: .6s;
+				}
+			}
+		}
+
+		.icon{
+			display: inline-block;
+			
+			i{
+				display: block;
+				width: 20px;
+				height: 3px;
+				background: #fff;
+				margin: 4px 0 0;
+			}
+		}
+	}
+
+	&.dark{
+
+		.menu-icon{
+			color: #000;
+
+			.icon{
+
+				i{
+					background: #000;
+				}
+			}
+		}
+
+		&.navlit{
+
+			.menu-icon{
+				color: #fff;
+	
+				.icon{
+	
+					i{
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+// Light Mode
+.avo-offcanvas.style-2{
+	.menu-icon .text{
+	    color:  #0c0f16;
+	}	
+	.menu-icon .icon i{
+		background: #0c0f16;
+	}
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-offcanvas.style-2{
+	.menu-icon .text{
+	    color:  #fff;
+	}
+	.menu-icon .icon i{
+		background: #fff;
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-offcanvas.style-2{
+		.menu-icon .text{
+		    color:  #fff;
+		}
+		.menu-icon .icon i{
+			background: #fff;
+		}
+
+	}
+}

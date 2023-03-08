@@ -1,0 +1,121 @@
+/**
+ * Recent Posts Widget
+ */
+.dpr-recent-posts {
+	li {
+		display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+		position: relative;
+		line-height: 1.6;
+		padding-top: 12px;
+
+		&:first-child {
+			margin-top: 0;
+			padding-top: 0;
+			border: 0;
+		}
+	}
+
+	.recent-posts-thumbnail {
+		position: relative;
+		width: 25%;
+		min-width: 75px;
+		margin-right: 4%;
+
+		img {
+			width: 100%;
+		}
+
+		.overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 3px;
+			background-color: rgba(0,0,0,0.2);
+			opacity: 0;
+			text-align: center;
+			transition: all .3s ease;
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+		}
+
+		&:hover .overlay {
+			opacity: 1;
+		}
+	}
+
+	.recent-posts-details {
+		width: 100%;
+	}
+
+	.recent-posts-title {
+		font-weight: 500;
+	}
+
+	.recent-posts-info {
+		display: block;
+		margin-top: 6px;
+		font-size: 16px;
+		line-height: 1.4em;
+		letter-spacing: 0.2px;
+
+		.sep {
+			padding: 0 2px;
+			opacity:.4;
+		}
+	}
+
+	.recent-posts-date,
+	.recent-posts-category,
+	.recent-posts-comments,
+	.recent-posts-author {
+		display: inline-block;
+
+	}
+
+}
+
+/*------------------------------------*
+	All Devices under 960px
+*------------------------------------*/
+@media only screen and (max-width: 959px) {
+	
+	/* recent posts widget */
+	.dpr-recent-posts {
+		.recent-posts-thumbnail {
+			width: 15%;
+			margin-right: 3%;
+		}
+	}
+	
+}
+
+/*------------------------------------*
+	Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+	/* recent posts widget */
+	.dpr-recent-posts {
+		.recent-posts-thumbnail {
+			width: 25%;
+			margin-right: 4%;
+		}
+	}
+
+}
+
+body.rtl .dpr-recent-posts .recent-posts-thumbnail {
+	margin-right:0;
+	margin-left:4%;
+}

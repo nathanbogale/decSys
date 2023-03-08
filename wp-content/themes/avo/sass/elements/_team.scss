@@ -1,0 +1,464 @@
+
+
+/*----------Team Style 1----------*/
+
+.team-post {
+	color: $color-white;
+}
+.team-name {
+	color: $color-white;
+	font-size: 40px;
+	margin: 0;
+	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	position: relative;
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	-moz-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	-ms-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	-o-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+}
+.hovering {
+	&:hover {
+		.team-name {
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			opacity: 1;
+		}
+		.team-soc-list {
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
+.team-soc-list {
+	list-style: none;
+	padding: 0;
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	position: relative;
+	margin: 0;
+	opacity: 0;
+	-webkit-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	-moz-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	-ms-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	-o-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	transition-delay: 0.6s;
+	li {
+		display: inline-block;
+	}
+	a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		border-radius: 100px;
+		color: $color-white;
+		background: $primary-color;
+		line-height: 35px;
+		&:hover {
+			background: #fff;
+			color: $primary-color;
+		}
+	}
+}
+.team-sicon {
+	padding: 0;
+	display: block;
+	position: relative;
+	z-index: 33;
+	li {
+		display: inline-block;
+		text-align: center;
+		a {
+			background-color: $color-white;
+			color: $primary-color;
+			padding-left: 0;
+			display: block;
+			border: 1px solid transparent;
+			border-radius: 50%;
+			margin: 5px;
+			&:hover {
+				border-color: $color-white;
+				color: $primary-color;
+			}
+			i {
+				border-radius: 50%;
+				height: 35px;
+				line-height: 35px;
+				margin: auto;
+				text-align: center;
+				width: 35px;
+			}
+		}
+	}
+}
+.dsc_about_me {
+	.port-box {
+		min-height: 100%;
+	}
+}
+.team-1 {
+	box-shadow: 0px 15px 39px 0px rgb(106, 109, 113);
+	.team-info {
+		background: #fff;
+		padding: 20px 10px;
+		text-align: center;
+		border-bottom: 1px solid #75dab4;
+	}
+	h5 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 14px;
+		margin-bottom: 0px;
+		color: $primary-color;
+	}
+	.port-box {
+		padding: 50% 0;
+		text-align: center;
+	}
+	.port-dbox {
+		text-align: center;
+	}
+	.port-img {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	.port-inner {
+		&:hover {
+			.port-box {
+				opacity: 0.9;
+				background: #fff;
+			}
+			
+
+		}
+	}
+	&:hover{
+		.port-box{
+			background-color: #000000;
+    		opacity: 0.3;
+
+		}
+		.port-img {
+			webkit-filter: none;
+			-moz-filter: none;
+			filter: none;
+		}
+		.dbox-relative{
+			opacity: 1;
+			transform: scale(1);
+			-ms-transform: scale(1);
+			-webkit-transform: scale(1);
+		}
+
+	};
+}
+
+/*----------Team Style 2----------*/
+.team-2 {
+	.port-box {
+		background: $primary-color;
+	}
+}
+.team-list {
+	.port-dbox {
+		width: auto;
+	}
+}
+.team-list-two {
+	.team-col {
+		padding: 0;
+	}
+	.port-inner {
+		margin: 0;
+	}
+	.dbox-relative {
+		background: transparent;
+		padding: 0 20px;
+	}
+	.team-sicon {
+		li {
+			a {
+				color: $primary-color;
+			}
+		}
+	}
+}
+.team-list-one {
+	.team-col {
+		margin-bottom: 30px;
+	}
+}
+/*----------Team Style 3----------*/
+.team-3 {
+	.team-info {
+		background: #fff;
+		padding: 20px 10px;
+		text-align: center;
+		border-bottom: 2px solid $primary-color;
+	    width: 75%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: -50px;
+	    z-index: 100;
+	    position: relative;
+	    box-shadow: 0px 10px 30px 0px rgba(18, 15, 80, 0.1);
+		h5 {
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-size: 20px;
+		    font-weight: 700;
+		    text-transform: capitalize;
+		}
+		p {
+			font-size: 13px;
+			margin-bottom: 15px;
+			color: $primary-color;
+			font-weight: 500;
+	    	letter-spacing: 1px;
+	    	text-transform: uppercase;
+		}
+		.team-sicon {
+			padding: 0;
+			display: block;
+			position: relative;
+			z-index: 33;
+			li {
+				display: inline-block;
+				text-align: center;
+				a {
+					background-color: $color-white;
+					color: $primary-color;
+					padding-left: 0;
+					display: block;
+					border: 1px solid $primary-color;
+					border-radius: 50%;
+					margin: 5px;
+					&:hover {
+						color: $color-white;
+						background-color: $primary-color;
+					}
+					i {
+						border-radius: 50%;
+						height: 35px;
+						line-height: 35px;
+						margin: auto;
+						text-align: center;
+						width: 35px;
+					}
+				}
+			}
+		}
+	}
+
+	.port-box {
+		padding: 50% 0;
+		text-align: center;
+	}
+	.port-img {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+	}
+	&:hover{
+		.port-box{
+			background-color: #000000;
+    		opacity: 0.3;
+
+		}
+	};
+}
+/*----------Team Style 4----------*/
+.avo-team.style-4{
+	.team{
+		position: relative;
+		padding: 120px 0;
+		background-color: #0c0f16;
+		z-index:0;
+		.container {
+		    display: block;
+			width: 100%;
+			max-width: 1200px;
+		}
+		h3{
+			font-size: 80px;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    letter-spacing: 4px;
+		    text-shadow: 0 8px rgba(255, 255, 255, 0.05);
+		    color:#fff;
+		}
+		h6{
+			color:$primary-color;
+		    font-weight: 300;
+		    font-size: 17px;
+		    text-transform: uppercase;
+		    letter-spacing: 14px;
+		    margin-bottom: 5px;
+		}
+
+		.team-container{
+			width: 140%;
+			position: relative;
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: -120px;
+				bottom: -120px;
+				right: 0;
+				width: 80%;
+				background: #1a1e25;
+				z-index: -1;
+			}
+		}
+
+		.item{
+			padding: 0 15px;
+
+			.info{
+				padding: 15px;
+				background: #11141b;
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+
+				h5{
+					font-size: 18px;
+					margin-bottom: 2px;
+					transition: all .3s;
+					color:#fff;
+				}
+
+				span{
+					color: #999;
+					font-size: 14px;
+					transition: all .3s;
+				}
+
+				.social{
+					position: absolute;
+					bottom: -300px;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					padding: 30px 5px 0;
+					z-index: 2;
+					opacity: 0;
+					transition: all .4s;
+
+					a{
+						font-size: 13px;
+						margin: 0 8px;
+						color: $primary-color;
+					}
+				}
+			}
+
+			&:hover{
+
+				.info{
+
+					h5,span{
+						opacity: 0;
+					}
+
+					.social{
+						bottom: 0;
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		.navs{
+
+			.prev,.next{
+				color: #ccc;
+				font-size: 13px;
+				width: 55px;
+				height: 55px;
+				line-height: 55px;
+				text-align: center;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				position: static;
+			    display: inline-block !important;
+			}
+		}
+
+		.slick-dots{
+			bottom: -40px;
+		}
+
+		.slick-dots li.slick-active button{
+			background: $primary-color;
+		}
+
+		.slick-dots li button{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			opacity: .8;
+
+			&:before{
+				content: '';
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				position: absolute;
+				top: 4px;
+				left: 4px;
+				line-height: 1;
+				background: $primary-color;
+				opacity: 1;
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 480px){
+	.avo-team.style-4 .team h3 {
+	    font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.avo-team.style-4 .team .navs {
+	    top: 20px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.avo-team.style-4 .team .navs {
+	    position: absolute;
+	    top: 60px;
+	    right: 0;
+	    margin-top: 0 !important;
+	}
+	.avo-team.style-4 .sec-head.mb-0{
+		margin-bottom: 80px !important;
+	}
+	.avo-team.style-4 .min-area .content, .avo-team.style-4 .min-area .img {
+    padding: 120px 0;
+	}
+}

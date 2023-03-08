@@ -1,0 +1,433 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-07 01:08+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: 404.php:19
+msgid "404"
+msgstr ""
+
+#: 404.php:20
+msgid "We"
+msgstr ""
+
+#: 404.php:20
+msgid "re sorry, but the Page you were looking for, couldn"
+msgstr ""
+
+#: 404.php:20
+msgid "t be found."
+msgstr ""
+
+#: 404.php:23 search-portfolio.php:47 search.php:103
+#: template-parts/main-header.php:9 template-parts/main-header.php:15
+#: template-parts/main-header.php:21 template-parts/main-header.php:27
+msgid "Search.."
+msgstr ""
+
+#: 404.php:27
+msgid "Or"
+msgstr ""
+
+#: 404.php:28
+msgid "Back to Home Page "
+msgstr ""
+
+#: comments.php:17
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:22
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:57
+msgid "Your Name*"
+msgstr ""
+
+#: comments.php:62
+msgid "Your Email*"
+msgstr ""
+
+#: comments.php:70
+msgid "Your Comment*"
+msgstr ""
+
+#: comments.php:72
+msgid "Send Comment "
+msgstr ""
+
+#: comments.php:73
+msgid "Leave a Reply"
+msgstr ""
+
+#: footer-index.php:22 includes/theside-options.php:670
+msgid "Back to top"
+msgstr ""
+
+#: footer-index.php:32 footer.php:5
+msgid "Close"
+msgstr ""
+
+
+#: functions.php:174
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:270
+msgid "Search for:"
+msgstr ""
+
+#: header.php:44
+msgid "Menu"
+msgstr ""
+
+#: header.php:54
+msgid "Call "
+msgstr ""
+
+#: header.php:57
+msgid "Write "
+msgstr ""
+
+#: header.php:122
+msgid "Share"
+msgstr ""
+
+#: search-portfolio.php:43
+msgid "No Item Found"
+msgstr ""
+
+#: search-portfolio.php:44 search.php:100
+msgid "Please Search Again."
+msgstr ""
+
+#: search.php:11 includes/theside-options.php:663
+#: template-parts/blog/default.php:10
+#: template-parts/index/blog-left-block.php:10
+#: template-parts/index-details/left-side-block.php:10
+#: template-parts/page/theside-element.php:10
+#: template-parts/page/theside-element.php:35
+#: template-parts/portfolio/column-grid-2.php:11
+#: template-parts/portfolio/column-grid.php:11
+#: template-parts/portfolio-details/sidebar.php:11
+#: woocommerce/archive-product.php:40
+#: woocommerce/content-single-product.php:35
+msgid "Scroll down"
+msgstr ""
+
+#: search.php:25
+#, php-format
+msgid "Results for %s"
+msgstr ""
+
+#: search.php:49 template-parts/blog/blog-left.php:70
+#: template-parts/blog/blog-right.php:70 template-parts/blog/default.php:65
+#: template-parts/index/blog-left-block.php:52
+#: template-parts/index/blog-left.php:60
+#: template-parts/index/blog-right.php:60
+#: template-parts/index-details/left-side-block.php:50
+#: template-parts/index-details/left.php:59
+#: template-parts/index-details/right.php:59
+#: template-parts/portfolio-details/sidebar.php:68
+msgid "Category : "
+msgstr ""
+
+#: search.php:76 template-parts/blog/blog-left.php:97
+#: template-parts/blog/blog-right.php:97 template-parts/blog/default.php:92
+#: template-parts/index/blog-left-block.php:79
+#: template-parts/index/blog-left.php:87
+#: template-parts/index/blog-right.php:87
+msgid "Read more"
+msgstr ""
+
+#: search.php:84 template-parts/blog/blog-left.php:105
+#: template-parts/blog/blog-right.php:105 template-parts/blog/default.php:100
+#: template-parts/index/blog-left-block.php:87
+#: template-parts/index/blog-left.php:95
+#: template-parts/index/blog-right.php:95
+#: template-parts/index-details/left.php:195
+#: template-parts/index-details/right.php:195
+msgid "0"
+msgstr ""
+
+#: search.php:99
+msgid "No Post Found"
+msgstr ""
+
+#: includes/theside-options.php:677 template-parts/blog/blog-left.php:35
+#: template-parts/blog/blog-right.php:35 template-parts/index/blog-left.php:28
+#: template-parts/index/blog-right.php:28
+#: template-parts/index-details/left.php:28
+#: template-parts/index-details/right.php:28
+#: template-parts/page/default.php:51
+#: template-parts/portfolio/boxed-grid.php:54
+#: template-parts/portfolio-details/half-image.php:45
+#: template-parts/portfolio-details/video.php:50
+msgid "Scroll Down to discover"
+msgstr ""
+
+
+#: template-parts/main-header.php:72
+msgid "Follow us : "
+msgstr ""
+
+#: template-parts/page_title.php:5
+msgid "Our last News"
+msgstr ""
+
+#: template-parts/page_title.php:20
+msgid "Search Page"
+msgstr ""
+
+#: template-parts/page_title.php:22
+msgid "Error 404"
+msgstr ""
+
+#: template-parts/index/blog-left-block.php:24
+#: template-parts/index/blog-left.php:19
+#: template-parts/index/blog-right.php:19
+#: template-parts/index-details/left-side-block.php:24
+#: template-parts/index-details/left.php:19
+#: template-parts/index-details/right.php:19
+msgid "Our last"
+msgstr ""
+
+#: template-parts/index/blog-left-block.php:24
+#: template-parts/index/blog-left.php:19
+#: template-parts/index/blog-right.php:19
+#: template-parts/index-details/left-side-block.php:24
+#: template-parts/index-details/left.php:19
+#: template-parts/index-details/right.php:19
+msgid "News"
+msgstr ""
+
+#: template-parts/index-details/left-side-block.php:150
+#: template-parts/index-details/left.php:159
+#: template-parts/index-details/right.php:159
+#: template-parts/portfolio-details/carousel.php:282
+#: template-parts/portfolio-details/gallery-des.php:312
+#: template-parts/portfolio-details/half-image.php:283
+#: template-parts/portfolio-details/sidebar.php:286
+#: template-parts/portfolio-details/slider.php:308
+#: template-parts/portfolio-details/video.php:289
+msgid "Prev - "
+msgstr ""
+
+#: template-parts/index-details/left-side-block.php:155
+#: template-parts/index-details/left.php:164
+#: template-parts/index-details/right.php:164
+msgid "No Post Available"
+msgstr ""
+
+#: template-parts/index-details/left-side-block.php:174
+#: template-parts/index-details/left.php:183
+#: template-parts/index-details/right.php:183
+#: template-parts/portfolio-details/carousel.php:308
+#: template-parts/portfolio-details/gallery-des.php:338
+#: template-parts/portfolio-details/half-image.php:309
+#: template-parts/portfolio-details/sidebar.php:312
+#: template-parts/portfolio-details/slider.php:334
+#: template-parts/portfolio-details/video.php:315
+msgid "Next - "
+msgstr ""
+
+#: template-parts/intro/full-carousel.php:58
+msgid "Start explore"
+msgstr ""
+
+#: template-parts/intro/full-image.php:51 template-parts/intro/impulse.php:59
+#: template-parts/intro/multi-slideshow.php:44 template-parts/intro/rev.php:53
+#: template-parts/intro/slideshow.php:77 template-parts/intro/vimeo.php:56
+#: template-parts/intro/youtube.php:57
+msgid "Click to  Start discover"
+msgstr ""
+
+#: template-parts/intro/full-slider.php:66
+#: template-parts/intro/half-slider.php:73
+msgid "Next "
+msgstr ""
+
+#: template-parts/intro/full-slider.php:67
+#: template-parts/intro/half-slider.php:74
+msgid "Prev "
+msgstr ""
+
+#: template-parts/intro/half-slider.php:12
+msgid "01"
+msgstr ""
+
+#: template-parts/portfolio/boxed-grid.php:75
+#: template-parts/portfolio/column-grid-2.php:54
+#: template-parts/portfolio/column-grid.php:55
+#: template-parts/portfolio/grid.php:12 template-parts/portfolio/row-1.php:11
+#: template-parts/portfolio/row-2.php:11 template-parts/portfolio/row-3.php:11
+msgid "Works Filter "
+msgstr ""
+
+#: template-parts/portfolio/boxed-grid.php:78
+#: template-parts/portfolio/column-grid-2.php:57
+#: template-parts/portfolio/column-grid.php:58
+#: template-parts/portfolio/grid.php:15 template-parts/portfolio/row-1.php:14
+#: template-parts/portfolio/row-2.php:14 template-parts/portfolio/row-3.php:14
+msgid "All Works"
+msgstr ""
+
+#: template-parts/portfolio/row-1.php:30 template-parts/portfolio/row-2.php:32
+#: template-parts/portfolio/row-3.php:30
+msgid "Scroll or  Swipe"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:16
+#: template-parts/portfolio-details/gallery-des.php:46
+msgid "Info"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:96
+#: template-parts/portfolio-details/gallery-des.php:124
+#: template-parts/portfolio-details/half-image.php:97
+#: template-parts/portfolio-details/sidebar.php:106
+#: template-parts/portfolio-details/slider.php:124
+#: template-parts/portfolio-details/video.php:105
+msgid "Details"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:99
+#: template-parts/portfolio-details/gallery-des.php:127
+#: template-parts/portfolio-details/half-image.php:100
+#: template-parts/portfolio-details/sidebar.php:109
+#: template-parts/portfolio-details/slider.php:127
+#: template-parts/portfolio-details/video.php:108
+msgid "Video Presentation"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:102
+#: template-parts/portfolio-details/gallery-des.php:130
+#: template-parts/portfolio-details/half-image.php:103
+#: template-parts/portfolio-details/sidebar.php:112
+#: template-parts/portfolio-details/slider.php:130
+#: template-parts/portfolio-details/video.php:111
+msgid "Plans"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:110
+#: template-parts/portfolio-details/gallery-des.php:138
+#: template-parts/portfolio-details/half-image.php:111
+#: template-parts/portfolio-details/sidebar.php:119
+#: template-parts/portfolio-details/slider.php:137
+#: template-parts/portfolio-details/video.php:118
+msgid "Gallery"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:170
+#: template-parts/portfolio-details/gallery-des.php:198
+#: template-parts/portfolio-details/half-image.php:171
+#: template-parts/portfolio-details/sidebar.php:179
+#: template-parts/portfolio-details/slider.php:197
+#: template-parts/portfolio-details/video.php:178
+msgid "Project Info"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:175
+#: template-parts/portfolio-details/gallery-des.php:203
+#: template-parts/portfolio-details/half-image.php:176
+#: template-parts/portfolio-details/sidebar.php:184
+#: template-parts/portfolio-details/slider.php:202
+#: template-parts/portfolio-details/video.php:183
+msgid "The Brief"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:286
+#: template-parts/portfolio-details/carousel.php:312
+#: template-parts/portfolio-details/gallery-des.php:316
+#: template-parts/portfolio-details/gallery-des.php:342
+#: template-parts/portfolio-details/half-image.php:287
+#: template-parts/portfolio-details/half-image.php:313
+#: template-parts/portfolio-details/sidebar.php:290
+#: template-parts/portfolio-details/sidebar.php:316
+#: template-parts/portfolio-details/slider.php:312
+#: template-parts/portfolio-details/slider.php:338
+#: template-parts/portfolio-details/video.php:293
+#: template-parts/portfolio-details/video.php:319
+msgid "Back To Portfolio"
+msgstr ""
+
+#: template-parts/portfolio-details/carousel.php:288
+#: template-parts/portfolio-details/carousel.php:314
+#: template-parts/portfolio-details/gallery-des.php:318
+#: template-parts/portfolio-details/gallery-des.php:344
+#: template-parts/portfolio-details/half-image.php:289
+#: template-parts/portfolio-details/half-image.php:315
+#: template-parts/portfolio-details/sidebar.php:292
+#: template-parts/portfolio-details/sidebar.php:318
+#: template-parts/portfolio-details/slider.php:314
+#: template-parts/portfolio-details/slider.php:340
+#: template-parts/portfolio-details/video.php:295
+#: template-parts/portfolio-details/video.php:321
+msgid "Back To Home"
+msgstr ""
+
+#: template-parts/portfolio-details/sidebar.php:57
+msgid "Project Gallery"
+msgstr ""
+
+#: template-parts/portfolio-details/slider.php:64
+msgid "Next"
+msgstr ""
+
+#: template-parts/portfolio-details/slider.php:65
+msgid "Prev"
+msgstr ""
+
+#: theside-widget/widget/theside-user.php:34
+msgid "Find on : "
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:28
+msgid "Return to shop"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:46
+msgid "Clear"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variation.php:23
+msgid ""
+"Sorry, this product is unavailable. Please choose a different combination."
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional information"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:25
+msgid "Description"
+msgstr ""

@@ -1,0 +1,419 @@
+
+
+/*----------Testimonial Style 1----------*/
+
+.testimonial.style-1 {
+	position: relative;
+	z-index: 1;
+	.slick-slide {
+		border: 1px solid #fff;
+		padding: 50px 25px;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: $color-white;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		&:hover {
+			-webkit-transform: translateY(-5px);
+			transform: translateY(-5px);
+		}
+	}
+	p {
+		font-family: $bodyFont;
+		margin-bottom: 0;
+		color: $color_1;
+	}
+	.testi-from {
+		font-family: $bodyFont;
+		font-size: 14px;
+		font-style: normal;
+		text-transform: capitalize;
+		color: $color_2;
+		margin-bottom: 15px;
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin: 0;
+	}
+	>div {
+		margin: auto;
+		max-width: 1170px;
+		text-align: center;
+	}
+	.author-img {
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto 20px;
+	}
+	.rating-icon {
+		color: $primary-color;
+		letter-spacing: 10px;
+		overflow: hidden;
+		margin-top: 1.8rem;
+		margin-bottom: -4px;
+		font-size: 18px;
+		webkit-transition: ease .5s;
+		-moz-transition: ease .5s;
+		-o-transition: ease .5s;
+		-ms-transition: ease .5s;
+		transition: ease .5s;
+	}
+}
+.with-bg {
+	.testimonial {
+		p {
+			color: $color-white;
+		}
+		h3 {
+			color: $color-white;
+		}
+	}
+	padding: 150px 0;
+	.slider-mask {
+		background: rgba(0, 0, 0, 0.5) none repeat scroll 0;
+	}
+}
+
+
+/*----------------------------------------------------------------Testimonial Style 2------------------------------------------------*/
+
+
+.testimonial.style-2{
+
+	.slick-slide {
+		background-color: transparent;
+		border: none;
+
+		&.item{
+
+			p{
+				color: #333;
+				font-size: 17px;
+				margin: 0;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid rgba(0,0,0,0.05);
+				font-weight: 300;
+				line-height: 2;
+			}
+
+			.info{
+				margin-top: 30px;
+
+				.img{
+					display: table-cell;
+					vertical-align: middle;
+					.img-box{
+						width: 70px;
+						height: 70px;
+						border-radius: 50%;
+						overflow: hidden;
+
+					}
+				}
+				.cont{
+					display: table-cell;
+					vertical-align: middle;
+					padding-left: 15px;
+
+					.author-name{
+						color: #0c0f16;
+						font-size: 16px;
+						margin-bottom: 5px;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+					}
+
+					.author-details{
+							color: #0c0f16;
+							font-size: 13px;
+							font-weight: 300;
+							text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+
+	.slick-dots{
+		position: absolute;
+		bottom: -25px;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: right;
+		li{
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			border: 1px solid #0c0f16;
+			list-style: none;
+			display: inline-block;
+			position: relative;
+		    margin: 0 5px;
+		    padding: 0;
+		    cursor: pointer;
+			&.slick-active{
+				background: #eee;
+			}
+			button{
+				display: none;
+			}
+
+		}
+
+	}
+	.arrows{
+
+		.next, .prev{
+			position: absolute;
+			right: -50px;
+			top: 50%;
+			width: 50px;
+			height: 50px;
+			line-height: 55px;
+			text-align: center;
+			font-size: 20px;
+			border: 1px solid #eee;
+			border-radius: 50%;
+			opacity: 0;
+			transition: all .4s;
+
+			&:hover{
+				border-color: $primary-color;
+			}
+		}
+
+		.prev{
+			right: auto;
+			left: -50px;
+		}
+	}
+
+	&:hover{
+
+		.arrows{
+
+			.next, .prev{
+				opacity: 1;
+				right: 0;
+			}
+
+			.prev{
+				left: 0;
+			}
+		}
+	}
+
+	&.lftstl{
+		
+		.item{
+			text-align: left;
+
+			.info{
+
+				.author{
+					
+					.lxleft{
+						display: table-cell;
+						vertical-align: middle;
+
+						.img{
+							margin: 0;
+						}
+					}
+
+					.fxright{
+						display: table-cell;
+						padding: 20px;
+					}
+				}
+			}
+		}
+
+		.slick-dots{
+			text-align: right;
+		}
+	}
+
+}
+/*----------------------------------------------------------------Testimonial Style 3------------------------------------------------*/
+
+
+.testimonial.style-3{
+
+	.item{
+		text-align: center;
+		margin: 0 15px;
+
+		p{
+			font-size: 22px;
+			font-weight: 300;
+			
+		    line-height: 2;
+		    margin: 0;
+		    font-family: 'Poppins', sans-serif;
+		}
+
+		.info{
+			margin-top: 30px;
+
+			.img{
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin: 0 auto 20px;
+			}
+
+			.author-name{
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 500;
+				margin-bottom: 5px;
+				color: $primary-color;
+			}
+
+			.author-details{
+				font-size: 13px;
+				
+			}
+		}
+	}
+
+	.slick-dots{
+		bottom: -30px;
+	}
+
+	.slick-dots li{
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		border: 1px solid #eee;
+
+		&.slick-active{
+			background: #eee;
+		}
+
+		button{
+			display: none;
+		}
+	}
+
+	.arrows{
+
+		.next, .prev{
+			position: absolute;
+			right: -50px;
+			top: 50%;
+			width: 50px;
+			height: 50px;
+			line-height: 55px;
+			text-align: center;
+			font-size: 20px;
+			border: 1px solid #eee;
+			border-radius: 50%;
+			opacity: 0;
+			transition: all .4s;
+
+			&:hover{
+				border-color: $primary-color;
+			}
+		}
+
+		.prev{
+			right: auto;
+			left: -50px;
+		}
+	}
+
+	&:hover{
+
+		.arrows{
+
+			.next, .prev{
+				opacity: 1;
+				right: 0;
+			}
+
+			.prev{
+				left: 0;
+			}
+		}
+	}
+
+	&.lftstl{
+		
+		.item{
+			text-align: left;
+
+			.info{
+
+				.author{
+					
+					.lxleft{
+						display: table-cell;
+						vertical-align: middle;
+
+						.img{
+							margin: 0;
+						}
+					}
+
+					.fxright{
+						display: table-cell;
+						padding: 20px;
+					}
+				}
+			}
+		}
+
+		.slick-dots{
+			text-align: right;
+		}
+	}
+
+
+}
+
+
+// Light Mode
+.testimonial.style-3{
+	.item p{
+		color: #777;
+	}
+	.author-details{
+		color: #0c0f16;
+	}
+} 
+
+// Dark Mode 
+body.avo-dark-mode .testimonial.style-3{
+	.item p{
+		color: #c8c8c8;
+	}
+	.author-details{
+		color :#fff;
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .testimonial.style-3{
+		.item p{
+			color: #c8c8c8;
+		}
+		.author-details{
+			color :#fff;
+		}
+	}
+}

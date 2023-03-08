@@ -1,0 +1,68 @@
+#dpr-top-bar-wrapper {
+	background-color: $color-2;
+	font-size: 12px;
+	border-bottom: 1px solid $color-2;
+	z-index: 10;
+}
+
+#dpr-top-bar-wrapper {
+	padding: 8px 0;
+}
+
+#dpr-top-bar-inner {
+display:flex;
+align-items: center;
+vertical-align:middle;
+}
+
+#dpr-top-bar-inner.columns-1 .top-bar-column {
+flex-grow: 1;
+}
+
+#dpr-top-bar-inner.columns-2 .top-bar-column:first-child {
+flex-grow: 1;
+margin-right:15px;
+}
+
+#dpr-top-bar-inner.columns-3 .top-bar-column {
+flex-grow: 1;
+}
+#dpr-top-bar-inner.columns-3 .top-bar-column:first-child {
+flex-grow: 0;
+margin-right:15px;
+}
+#dpr-top-bar-inner.columns-3 .top-bar-column:last-child {
+flex-grow: 0;
+margin-left:15px;
+}
+
+
+
+/* Fullwidth top bar */
+
+.full-width-topbar #dpr-top-bar-inner, 
+.is-sticky #dpr-top-bar-wrapper.use-full-width-top #dpr-top-bar-inner,
+.is-sticky #dpr-top-bar-wrapper.use-full-width-top #dpr-top-bar-social.dpr-top-bar-right,
+.full-width-topbar #dpr-top-bar-social.dpr-top-bar-right {
+	padding: 0 30px;
+}
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	#dpr-top-bar {
+		padding: 20px 0;
+
+		> div:nth-child(2) {
+			padding-top: 20px;
+		}
+	}
+
+	.dpr-top-bar-right {
+		float: none;
+		text-align: center;
+	}
+	
+}

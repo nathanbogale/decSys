@@ -1,0 +1,218 @@
+ul.page-numbers {
+	display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0;
+    list-style: none;
+    text-align: right;
+    clear: both;
+
+    li {
+	    display: inline-block;
+	}
+}
+
+.page-links {
+    margin: 30px 0;
+}
+.page-links:before {
+	contnt:'';
+	display:block;
+	clear:both;
+}
+
+
+.page-numbers a,
+.page-numbers span:not(.elementor-screen-only),
+.page-links span ,
+.page-numbers.current{
+    position: relative;
+    display: inline-block;
+    min-width: 36px;
+    min-width: 36px;
+    line-height: 36px;
+    margin: 0 4px 8px 4px;
+    text-align: center;
+    color: $color-15;
+    border: 1px solid $border-color;
+    background-color: $color-8;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    @include border-radius( 5px );
+    @include transition( all .3s ease );
+    @include box-sizing( content-box );
+}
+.page-links span span {
+	margin:0;
+	border:none;
+}
+.dpr-adeline-pagination.round .page-numbers a,
+.dpr-adeline-pagination.round .page-numbers span,
+.dpr-adeline-pagination.round .page-links span,
+.dpr-adeline-pagination.round .page-numbers.current,
+.woocommerce-pagination.round .page-numbers a,
+.woocommerce-pagination.round .page-links span,
+.woocommerce-pagination.round .page-numbers.current,
+.page-links.round span,
+.page-links.round a {
+	@include border-radius( 50% );
+}
+.dpr-adeline-pagination.shadowed .page-numbers a,
+.dpr-adeline-pagination.shadowed .page-numbers span,
+.dpr-adeline-pagination.shadowed .page-links span,
+.dpr-adeline-pagination.shadowed .page-numbers.current,
+.woocommerce-pagination.shadowed .page-numbers a,
+.woocommerce-pagination.shadowed .page-links span,
+.woocommerce-pagination.shadowed .page-numbers.current {
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.page-numbers a span {
+    padding: 0;
+}
+.page-numbers a span:not(.elementor-screen-only) {
+    padding: 0;
+}
+
+.page-numbers a:hover,
+.page-links a:hover span,
+.page-links span.current,
+.page-links span.current span,
+.page-numbers span.current ,
+.page-numbers span.current:hover {
+    background-color: $color-5;
+	border-color: darken($color-5, 2%);
+    color: $color-1;
+}
+
+.elementor-pagination .page-numbers.current,
+.elementor-pagination .page-numbers.current:hover {
+    background-color: transparent;
+}
+
+.dpr-adeline-pagination {
+    &.dpr-adeline-center ul.page-numbers,
+    &.dpr-adeline-center .page-links {
+        text-align: center;
+    }
+
+    &.dpr-adeline-left ul.page-numbers,
+    &.dpr-adeline-left .page-links {
+        text-align: left;
+    }
+}
+
+/* next/prev */
+.page-jump a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+	letter-spacing:1px;
+	font-weight:700;
+}
+
+/* infinite scroll */
+.scroller-status,
+.infinite-scroll-last,
+.infinite-scroll-error {
+    display: none;
+}
+
+.scroller-status {
+    margin-top: 20px;
+    text-align: center;
+    clear: both;
+
+    p {
+        margin: 0;
+    }
+}
+
+.loader-ellips {
+    font-size: 12px;
+    position: relative;
+    width: 3.5em;
+    height: 1em;
+    margin: 0 auto;
+}
+
+.loader-ellips__dot {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: $color-5;
+    position: absolute;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      left: 0;
+    }
+
+    &:nth-child(3) {
+        left: 1.3em;
+    }
+
+    &:nth-child(4) {
+        left: 2.6em;
+    }
+
+    &:nth-child(1) {
+        animation-name: reveal;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        animation-name: slide;
+    }
+
+    &:nth-child(4) {
+        animation-name: reveal;
+        animation-direction: reverse;
+    }
+}
+
+@keyframes reveal {
+    from { transform: scale(0.001); }
+    to { transform: scale(1); }
+}
+
+@keyframes slide {
+    to { transform: translateX(1.3em) }
+}
+
+.infinite-scroll-nav, .load-more-scroll-nav, .portfolio-infinite-scroll-nav, .portfolio-load-more-scroll-nav{
+    display: none;
+}
+
+.dp-adeline-loadmore-wrapper {
+	margin: 1em auto;
+	text-align: center;
+}
+.dp-adeline-loadmore-button {
+	background: $color-9;
+	border:none;
+	@include border-radius(5px);
+	padding:10px 15px 10px;
+	font-size:12px;
+	font-weight:700;
+	color: $color-4;
+	text-transform: uppercase;
+	line-height:20px;
+	-webkit-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+	margin:0 auto;
+}
+.dp-adeline-loadmore-button:hover {
+box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
+

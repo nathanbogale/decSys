@@ -1,0 +1,1580 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: DPR Adeline\n"
+"POT-Creation-Date: 2020-07-20 07:07+0200\n"
+"PO-Revision-Date: 2019-06-10 16:43+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:85
+msgid "404"
+msgstr ""
+
+#: 404.php:95
+msgid ""
+"We are sorry. But the page you are looking for is not available.<br /"
+">Perhaps you can try a new searching."
+msgstr ""
+
+#: 404.php:103
+msgid "Back To Homepage"
+msgstr ""
+
+#: comments.php:36
+msgid "There is one comment"
+msgstr ""
+
+#: comments.php:38
+#, php-format
+msgid "There are %s comments"
+msgstr ""
+
+#: comments.php:53 comments.php:56
+msgid "Previous"
+msgstr ""
+
+#: comments.php:53 comments.php:56
+#: framework/woocommerce/woocommerce-config.php:526
+#: template-parts/portfolio/single-portfolio-next-prev.php:28
+#: template-parts/single/next-prev.php:37
+#: woocommerce/checkout/form-multistep-checkout.php:117
+msgid "Next"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:70
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr ""
+
+#: comments.php:70
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:70
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:70
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:70
+msgid "Your Comment Here..."
+msgstr ""
+
+#: comments.php:70
+msgid "Post Comment"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:216
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:216
+msgid "Home"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:216
+msgid "404 Not Found"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:216
+msgid "Archives"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:218
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:220
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:222
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:224
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:616
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:633
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:650
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:666 framework/breadcrumb_trail.php:692
+#: framework/breadcrumb_trail.php:716 framework/breadcrumb_trail.php:740
+#: framework/breadcrumb_trail.php:1046
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:667 framework/breadcrumb_trail.php:717
+#: framework/breadcrumb_trail.php:1051
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:668 framework/breadcrumb_trail.php:1056
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: framework/breadcrumb_trail.php:693
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Page"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Page"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Page"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80 functions.php:167
+msgid "Top Bar"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Top Bar"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Top Bar Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Top Bar Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Top Bar"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Header"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Header"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Header Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Header Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Header"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Page Header"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Page Header"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Page Header Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Page Header Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Page Header"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Content"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Content"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Content Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Content Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Content"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Sidebar"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Sidebar"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Sidebar Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Sidebar Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Sidebar"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80 functions.php:167
+msgid "Footer"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Footer"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "Before Footer Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Footer Inner"
+msgstr ""
+
+#: framework/compatibility/class-dpr-beaver.php:80
+msgid "After Footer"
+msgstr ""
+
+#: framework/dpr_functions.php:816
+msgid "Image"
+msgstr ""
+
+#: framework/dpr_functions.php:1623
+#: template-parts/mobile/mobile-fullscreen-search.php:32
+msgid "Type your search"
+msgstr ""
+
+#: framework/dpr_functions.php:1808
+msgid "Recent Posts"
+msgstr ""
+
+#: framework/dpr_functions.php:1818
+msgid "Search Results Found"
+msgstr ""
+
+#: framework/dpr_functions.php:1838
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: framework/dpr_functions.php:1842
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: framework/dpr_functions.php:1842
+msgctxt "Page title monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: framework/dpr_functions.php:1846
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: framework/dpr_functions.php:1846
+msgctxt "Page title yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: framework/dpr_functions.php:1861
+msgid "404: Page Not Found"
+msgstr ""
+
+#: framework/dpr_functions.php:1901
+msgid "Blog"
+msgstr ""
+
+#: framework/dpr_functions.php:1931
+msgid "You searched for:"
+msgstr ""
+
+#: framework/dpr_functions.php:1935
+msgid "This author has written"
+msgstr ""
+
+#: framework/dpr_functions.php:1935
+msgid "articles"
+msgstr ""
+
+#: framework/dpr_functions.php:2586
+msgid "Pingback:"
+msgstr ""
+
+#: framework/dpr_functions.php:2590
+msgid "(Edit)"
+msgstr ""
+
+#: framework/dpr_functions.php:2603
+#, php-format
+msgid "%s "
+msgstr ""
+
+#: framework/dpr_functions.php:2612
+msgid "edit"
+msgstr ""
+
+#: framework/dpr_functions.php:2624
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: framework/dpr_functions.php:2732 framework/dpr_functions.php:2777
+#: framework/dpr_functions.php:2814
+#: framework/woocommerce/woocommerce-config.php:272
+#: framework/woocommerce/woocommerce-config.php:310
+#: page-templates/blog-page.php:151 page-templates/blog-page.php:178
+#: page-templates/blog-page.php:187
+msgid "Newer Posts"
+msgstr ""
+
+#: framework/dpr_functions.php:2735 framework/dpr_functions.php:2778
+#: framework/dpr_functions.php:2815
+#: framework/woocommerce/woocommerce-config.php:273
+#: framework/woocommerce/woocommerce-config.php:311
+#: page-templates/blog-page.php:152 page-templates/blog-page.php:179
+#: page-templates/blog-page.php:190
+msgid "Older Posts"
+msgstr ""
+
+#: framework/dpr_functions.php:2757 framework/dpr_functions.php:2759
+#: framework/dpr_functions.php:2796 framework/dpr_functions.php:2797
+#: framework/woocommerce/woocommerce-config.php:258
+#: page-templates/blog-page.php:133 page-templates/blog-page.php:134
+#: page-templates/blog-page.php:160 page-templates/blog-page.php:161
+#: template-parts/portfolio/portfolio-archive.php:498
+#: template-parts/portfolio/portfolio-archive.php:500
+#: template-parts/portfolio/portfolio-archive.php:552
+#: template-parts/portfolio/portfolio-archive.php:554
+msgid "End of content"
+msgstr ""
+
+#: framework/dpr_functions.php:2761 framework/dpr_functions.php:2763
+#: framework/dpr_functions.php:2799 framework/dpr_functions.php:2800
+#: framework/woocommerce/woocommerce-config.php:261
+#: page-templates/blog-page.php:136 page-templates/blog-page.php:137
+#: page-templates/blog-page.php:163 page-templates/blog-page.php:164
+#: template-parts/portfolio/portfolio-archive.php:504
+#: template-parts/portfolio/portfolio-archive.php:506
+#: template-parts/portfolio/portfolio-archive.php:558
+#: template-parts/portfolio/portfolio-archive.php:560
+msgid "No more pages to load"
+msgstr ""
+
+#: framework/dpr_functions.php:2794 page-templates/blog-page.php:158
+#: template-parts/portfolio/portfolio-archive.php:548
+msgid "Load More Posts"
+msgstr ""
+
+#: framework/dpr_functions.php:2795 page-templates/blog-page.php:159
+#: template-parts/portfolio/portfolio-archive.php:550
+msgid "No more posts to load"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: framework/dpr_functions.php:3030
+msgid "Adeline"
+msgstr ""
+
+#: framework/dpr_functions.php:3061 template-parts/mobile/mobile-icon.php:43
+#: template-parts/mobile/mobile-icon.php:99
+msgid "Menu"
+msgstr ""
+
+#: framework/dpr_functions.php:3061 template-parts/magic-cursor.php:21
+#: template-parts/mobile/mobile-icon.php:51
+msgid "Close"
+msgstr ""
+
+#: framework/dpr_functions.php:3061
+#: template-parts/mobile/mobile-sidr-close.php:27
+msgid "Close Menu"
+msgstr ""
+
+#: framework/dpr_functions.php:3061
+msgid "&copy; 2017, Adeline Theme by DynamicPress Team"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Facebook"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Twitter"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Google Plus"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Pinterest"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Dribbble"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Instagram"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "LinkedIn"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Flickr"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Skype"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "VK"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Viadeo"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Tumblr"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Github"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Youtube"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Vimeo"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Vine"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Stumbleupon"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Xing"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Digg"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Lastfm"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Soundcloud"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Delicious"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Yelp"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Tripadvisor"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Odnoklassniki"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "RSS"
+msgstr ""
+
+#: framework/dpr_functions.php:3072
+msgid "Email"
+msgstr ""
+
+#: framework/dpr_functions.php:3577
+#, php-format
+msgid "Module %s is not supported by frontend editor"
+msgstr ""
+
+#: framework/dpr_functions.php:3612
+msgid "Password protected content"
+msgstr ""
+
+#: framework/dpr_functions.php:3613
+msgid "To view it please enter your password below"
+msgstr ""
+
+#: framework/dpr_functions.php:3614 framework/dpr_functions.php:3620
+msgid "Password"
+msgstr ""
+
+#: framework/dpr_functions.php:3615 framework/dpr_functions.php:3621
+msgid "Submit"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:339
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:340
+msgid "Install Plugins"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:342
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:344
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:345
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:348
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:360
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:366
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:372
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:378
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:398
+#: framework/tgm/class-tgm-plugin-activation.php:931
+#: framework/tgm/class-tgm-plugin-activation.php:2696
+#: framework/tgm/class-tgm-plugin-activation.php:3770
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:399
+#: framework/tgm/class-tgm-plugin-activation.php:3339
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:400
+#: framework/tgm/class-tgm-plugin-activation.php:3124
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:402
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:404
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:406
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:407
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:408
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:409
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:619
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:620
+msgid "Update Required"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:1040
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:1040
+#: framework/tgm/class-tgm-plugin-activation.php:1043
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:1043
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:1229
+#: framework/tgm/class-tgm-plugin-activation.php:3120
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2126
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2427
+msgid "Required"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2430
+msgid "Recommended"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2447
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2450
+msgid "External Source"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2453
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2471
+msgid "Not Installed"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2475
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2477
+msgid "Active"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2483
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2486
+msgid "Requires Update"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2489
+msgid "Update recommended"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2498
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2546
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2550
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2554
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2558
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2644
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2652
+msgid "Installed version:"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2660
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2672
+msgid "Available version:"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2696
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2711
+msgid "Plugin"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2712
+msgid "Source"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2713
+msgid "Type"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2717
+msgid "Version"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2718
+msgid "Status"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2770
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2775
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2781
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2853
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2888
+msgid "Install"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2894
+msgid "Update"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2897
+msgid "Activate"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2929
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2931
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2972
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:2974
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3080
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3106
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3338
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3685
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3688
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3690
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3694
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3696
+#: framework/tgm/class-tgm-plugin-activation.php:3704
+#, php-format
+msgid "%1$s done."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3697
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3699
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3702
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3705
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/tgm/class-tgm-plugin-activation.php:3707
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:19
+msgid "DPR Adeline Extensions"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:20
+msgid "Visual Composer"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:21
+msgid "Revolution Slider"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:22
+msgid "Essential Grid"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:23
+msgid "Booked"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:24
+msgid "DPR Proof Callery"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:24
+msgid "Safe SVG"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:25
+msgid "Contact Form 7"
+msgstr ""
+
+#: framework/tgm/tgm-plugin-activation.php:26
+msgid "WooCommerce"
+msgstr ""
+
+#: framework/walker/init.php:63
+msgid "Template"
+msgstr ""
+
+#: framework/walker/init.php:65
+msgid "Menu > Particles"
+msgstr ""
+
+#: framework/walker/init.php:69
+msgid "Select A Template"
+msgstr ""
+
+#: framework/walker/init.php:86
+msgid "Disable link"
+msgstr ""
+
+#: framework/walker/init.php:93
+msgid "Display Latest Posts"
+msgstr ""
+
+#: framework/walker/init.php:101
+msgid "Enable megamenu"
+msgstr ""
+
+#: framework/walker/init.php:107
+msgid "Megamenu auto width?"
+msgstr ""
+
+#: framework/walker/init.php:112
+msgid "Megamenu columns (from 1 to 6)"
+msgstr ""
+
+#: framework/walker/init.php:120
+msgid "Hide Mega menu heading?"
+msgstr ""
+
+#: framework/walker/init.php:125
+msgid "Mega Menu Widget Area"
+msgstr ""
+
+#: framework/walker/init.php:128
+msgid "Select Widget Area"
+msgstr ""
+
+#: framework/walker/init.php:143
+msgid "Icon"
+msgstr ""
+
+#: framework/walker/init.php:156
+msgid "Badge Text"
+msgstr ""
+
+#: framework/walker/init.php:163
+msgid "Badge Background Color"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:290
+msgid "Load More Products"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:292
+#: framework/woocommerce/woocommerce-config.php:293
+msgid "No More Products"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:296
+msgid "No more products to load"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:401
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:401
+msgid "Widgets in this area are used in custom woocommerce sidebar."
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:521
+msgid "View cart"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:525
+#: woocommerce/checkout/form-multistep-checkout.php:117
+msgid "I don&rsquo;t have an account"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:577
+msgid "Cart"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:604
+msgid "Grid view"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:605
+msgid "List view"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:726
+msgid "Out of Stock"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:774
+msgid "Quick View"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:876
+msgid "Welcome!"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:884
+msgid "Logout"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1171
+msgid "Your cart"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1243
+msgid "Sale"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1270
+#: woocommerce/checkout/checkout-timeline.php:59
+msgid "Login"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1281
+msgid "Or"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1283
+msgid "Register"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1348
+msgid "WooCommerce Product Title"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1349
+msgid "WooCommerce Product Price"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:1350
+msgid "WooCommerce Product Add To Cart"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-helpers.php:77
+#: woocommerce/loop/thumbnail/single-image.php:87
+msgid "Placeholder Image"
+msgstr ""
+
+#: functions.php:167
+msgid "Main"
+msgstr ""
+
+#: functions.php:167
+msgid "Main menu left (used in centered header)"
+msgstr ""
+
+#: functions.php:167
+msgid "Main menu right (used in centered header)"
+msgstr ""
+
+#: functions.php:167
+msgid "Fullscreen Menu (optional)"
+msgstr ""
+
+#: functions.php:167
+msgid "Mobile (optional)"
+msgstr ""
+
+#: functions.php:194
+msgid "Small"
+msgstr ""
+
+#: functions.php:194
+msgid "S"
+msgstr ""
+
+#: functions.php:194
+msgid "Normal"
+msgstr ""
+
+#: functions.php:194
+msgid "M"
+msgstr ""
+
+#: functions.php:194
+msgid "Large"
+msgstr ""
+
+#: functions.php:194
+msgid "L"
+msgstr ""
+
+#: functions.php:194
+msgid "Huge"
+msgstr ""
+
+#: functions.php:194
+msgid "XL"
+msgstr ""
+
+#: functions.php:196
+msgid "Primary"
+msgstr ""
+
+#: functions.php:196
+msgid "Secondary"
+msgstr ""
+
+#: functions.php:196
+msgid "Dark Gray"
+msgstr ""
+
+#: functions.php:196
+msgid "Light Gray"
+msgstr ""
+
+#: functions.php:196
+msgid "White"
+msgstr ""
+
+#: functions.php:392
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:392
+msgid "Widgets in this area are used in the right sidebar region."
+msgstr ""
+
+#: functions.php:394
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions.php:394
+msgid "Widgets in this area are used in the left sidebar region."
+msgstr ""
+
+#: functions.php:396
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:396
+msgid "Widgets in this area are used in the first footer area."
+msgstr ""
+
+#: functions.php:398
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:398
+msgid "Widgets in this area are used in the second footer area."
+msgstr ""
+
+#: functions.php:400
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:400
+msgid "Widgets in this area are used in the third footer area."
+msgstr ""
+
+#: functions.php:402
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:402
+msgid "Widgets in this area are used in the fourth footer area."
+msgstr ""
+
+#: page-templates/blog-page.php:202
+msgid "You have no blog items"
+msgstr ""
+
+#: searchform.php:14 template-parts/mobile/mobile-search.php:24
+msgid "Search"
+msgstr ""
+
+#: template-parts/blog/meta.php:58
+#: template-parts/blog/small-image-style/comments.php:15
+#: template-parts/portfolio/single-portfolio-meta.php:49
+#: template-parts/single/meta.php:76
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/blog/meta.php:58
+#: template-parts/blog/small-image-style/comments.php:15
+#: template-parts/portfolio/single-portfolio-meta.php:49
+#: template-parts/single/meta.php:76
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/blog/meta.php:58
+#: template-parts/blog/small-image-style/comments.php:15
+#: template-parts/portfolio/single-portfolio-meta.php:49
+#: template-parts/single/meta.php:76
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/blog/readmore.php:12 template-parts/search/readmore.php:23
+msgid "Read More"
+msgstr ""
+
+#: template-parts/header/search-expandable.php:15
+msgid "Type then hit enter to search..."
+msgstr ""
+
+#: template-parts/header/search-fullscreen.php:18
+msgid "Type your text and hit enter to search"
+msgstr ""
+
+#: template-parts/header/styles/vertical-header-search.php:16
+msgid "Search..."
+msgstr ""
+
+#: template-parts/magic-cursor.php:22
+msgid "Zoom"
+msgstr ""
+
+#: template-parts/none.php:11
+#, php-format
+msgid "Ready to publish your first post? %1$sGet started here%2$s."
+msgstr ""
+
+#: template-parts/none.php:15
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: template-parts/none.php:20
+msgid "There aren't any posts currently published in this category."
+msgstr ""
+
+#: template-parts/none.php:25
+msgid "There aren't any posts currently published under this taxonomy."
+msgstr ""
+
+#: template-parts/none.php:30
+msgid "There aren't any posts currently published under this tag."
+msgstr ""
+
+#: template-parts/none.php:35
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: template-parts/page/article.php:32 template-parts/single/content.php:33
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/portfolio/portfolio-archive.php:33
+#: woocommerce/result-count.php:102
+msgid "All"
+msgstr ""
+
+#: template-parts/portfolio/portfolio-archive.php:534
+#: template-parts/portfolio/portfolio-archive.php:588
+#: template-parts/portfolio/portfolio-archive.php:606
+msgid "Newer Items"
+msgstr ""
+
+#: template-parts/portfolio/portfolio-archive.php:536
+#: template-parts/portfolio/portfolio-archive.php:590
+#: template-parts/portfolio/portfolio-archive.php:612
+msgid "Older Items"
+msgstr ""
+
+#: template-parts/portfolio/portfolio-archive.php:645
+#: template-parts/portfolio/portfolio-taxonomy.php:181
+msgid "You have no portfolio items"
+msgstr ""
+
+#: template-parts/portfolio/single-portfolio-next-prev.php:28
+#: template-parts/single/next-prev.php:37
+#: woocommerce/checkout/form-multistep-checkout.php:116
+msgid "Prev"
+msgstr ""
+
+#: template-parts/portfolio/single-portfolio-next-prev.php:28
+#: template-parts/single/next-prev.php:37
+msgid "Continue Reading"
+msgstr ""
+
+#: template-parts/portfolio/single-portfolio-related.php:93
+msgid "Related Projects"
+msgstr ""
+
+#: template-parts/right-click-blocker.php:15
+msgid ""
+"You can enable/disable right clicking from Theme Options and customize this "
+"message too."
+msgstr ""
+
+#: template-parts/single/author-bio.php:49
+#: template-parts/single/author-bio.php:60
+msgid "Visit Author Page"
+msgstr ""
+
+#: template-parts/single/related-posts.php:37
+msgid "Related Posts"
+msgstr ""
+
+#: tribe-events/day/single-event.php:88 tribe-events/list/single-event.php:88
+msgid "Learn more"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:40
+msgid "Details"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:55
+#: tribe-events/modules/meta/details.php:76
+msgid "Start:"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:58
+#: tribe-events/modules/meta/details.php:79
+msgid "End:"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:67
+#: tribe-events/modules/meta/details.php:88
+msgid "Date:"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:91
+msgid "Time:"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:112
+msgid "Cost:"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:127
+#: tribe-events/modules/meta/details.php:131
+#, php-format
+msgid "%s Tags:"
+msgstr ""
+
+#: tribe-events/modules/meta/details.php:141
+#: tribe-events/modules/meta/organizer.php:74
+#: tribe-events/modules/meta/venue.php:47
+msgid "Website:"
+msgstr ""
+
+#: tribe-events/modules/meta/organizer.php:45
+msgid "Organizer Name:"
+msgstr ""
+
+#: tribe-events/modules/meta/organizer.php:56
+#: tribe-events/modules/meta/venue.php:42
+msgid "Phone:"
+msgstr ""
+
+#: tribe-events/modules/meta/organizer.php:65
+msgid "Email:"
+msgstr ""
+
+#: tribe-events/modules/meta/venue.php:29
+msgid "Venue Name:"
+msgstr ""
+
+#: tribe-events/modules/meta/venue.php:33
+msgid "Address:"
+msgstr ""
+
+#: tribe-events/pro/related-events.php:51
+#, php-format
+msgid "Related %s"
+msgstr ""
+
+#: tribe-events/pro/single-organizer.php:29
+#: tribe-events/pro/single-venue.php:36
+#, php-format
+msgid "&larr; Back to %s"
+msgstr ""
+
+#: tribe-events/single-event.php:72
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: tribe-events/single-event.php:147
+#, php-format
+msgid "%s Navigation"
+msgstr ""
+
+#: woocommerce/add-to-wishlist-button.php:30
+msgid "loading"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:94
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:110
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:118
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/checkout/checkout-timeline.php:65
+msgid "Billing"
+msgstr ""
+
+#: woocommerce/checkout/checkout-timeline.php:70
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/checkout/checkout-timeline.php:75
+msgid "Payment Info"
+msgstr ""
+
+#: woocommerce/checkout/form-multistep-checkout.php:47
+msgid ""
+"If you have already registered, please, enter your details in the boxes "
+"below. If you are a new customer, please, go to the Billing &amp; Shipping "
+"section."
+msgstr ""
+
+#: woocommerce/checkout/form-multistep-checkout.php:81
+msgid "You must be logged in before proceeding to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-multistep-checkout.php:113
+msgid "Back to cart"
+msgstr ""
+
+#: woocommerce/quick-view-image.php:59
+msgid "Placeholder"
+msgstr ""
+
+#: woocommerce/result-count.php:88
+msgid "View:"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.dynamicpress.eu/envato/adeline/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adeline - Multiconcept WordPress Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "DynamicPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/dynamicpress"
+msgstr ""

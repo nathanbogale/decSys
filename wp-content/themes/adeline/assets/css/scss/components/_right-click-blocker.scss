@@ -1,0 +1,55 @@
+/* --- Right Click Blocker --- */
+
+#rc-blocker {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba($color-2, 0.9);
+  z-index: 999999;
+  display: none;
+  left: 0;
+  top: 0;
+}
+.rc-blocker-outer {
+  display: table;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.rc-blocker-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.rc-blocker-text {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  opacity: 0;
+  
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: opacity 0.4s, -webkit-transform 1.8s;
+  transition: opacity 0.4s, transform 1.8s;
+
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.rc-blocker-displayed .rc-blocker-text {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

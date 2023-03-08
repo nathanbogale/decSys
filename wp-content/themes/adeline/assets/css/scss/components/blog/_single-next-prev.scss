@@ -1,0 +1,127 @@
+/**
+ * Single Post Next Prev
+ */
+.single nav.post-navigation {
+	margin-top: 30px;
+    padding-top: 30px;
+
+    &:after {
+	    content: '';
+	    display: block;
+	    visibility: hidden;
+	    clear: both;
+	    zoom: 1;
+	    height: 0;
+	}
+
+    .nav-links {
+    	.title {
+		    display: inline-block;
+			min-width: 100px;
+		    line-height: 20px;
+			font-weight:700;
+			text-transform:uppercase;
+			@include transition( all .3s ease );
+			vertical-align: top;
+		}
+
+		a {
+			display: block;
+		}
+
+	    i {
+	    	font-size: 20px;
+	    	line-height: 20px;
+	    }
+
+	    .post-title {
+	    	display: inline-block;
+	    	font-size: 16px;
+	    	margin:0;
+			padding:0;
+			font-weight:500;
+			@include transition( all .3s ease );
+			opacity:0;
+			max-width:250px;
+			word-wrap: break-word;
+			overflow:hidden;
+
+	    }
+    }
+	
+
+	.nav-previous {
+	    float: left;
+	    width: 50%;
+	    text-align: left;
+	    border-right-width: 1px;
+	    border-style: solid;
+	    border-color: $color-9;
+	    padding-right: 20px;
+		
+	    i {
+	    	float: left;
+			margin-right: 10px;
+	    }
+		
+	}
+
+	.nav-previous:hover {
+		
+		.title {
+			opacity:0;
+			@include transform( translateX(-100px) );
+		}
+		.post-title {
+			opacity:1;
+			@include transform( translateX(-100px) );
+		}
+		
+	}
+
+	.nav-next {
+	    float: right;
+	    width: 50%;
+	    text-align: right;
+	    padding-left: 20px;
+	    i {
+	    	float: right;
+			margin-left: 10px;
+	    }
+	}
+
+	.nav-next:hover {
+		
+		.title {
+			opacity:0;
+			@include transform( translateX(100px) );
+		}
+		.post-title {
+			opacity:1;
+			@include transform( translateX(100px) );
+		}
+		
+	}
+	
+}
+
+/*------------------------------------*
+	Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+	
+	.single nav.post-navigation .nav-links {
+		.nav-previous,
+		.nav-next {
+			float: none;
+			width: 100%;
+			padding: 0;
+		}
+
+		.nav-previous {
+			border-right-width: 0;
+			border-left-width: 0;
+		}
+	}
+
+}

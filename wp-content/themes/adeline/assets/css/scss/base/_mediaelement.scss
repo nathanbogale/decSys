@@ -1,0 +1,63 @@
+/* Player background */
+.mejs-container,
+.mejs-controls,
+.mejs-embed,
+.mejs-embed body {
+  background-color: #efefef !important;
+}
+
+/* Player controls */
+.mejs-button > button {
+  background-image: url(../../assets/img/mejs-controls-dark.svg) !important;
+}
+
+.mejs-time {
+  color: #c9c9ce  !important;
+}
+
+/* Progress and audio bars */
+
+/* Progress and audio bar background */
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.mejs-controls .mejs-time-rail .mejs-time-total {
+  background-color: #fff  !important;
+}
+
+/* Track progress bar background (amount of track fully loaded)
+  We prefer to style these with the main accent color of our theme */
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+  background-color: rgba(255,255,255,0.075)  !important;
+}
+
+/* Current track progress and active audio volume level bar */
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.mejs-controls .mejs-time-rail .mejs-time-current {
+  background: $color-5  !important;
+}
+
+/* Reduce height of the progress and audio bars */
+.mejs-time-buffering,
+.mejs-time-current,
+.mejs-time-float,
+.mejs-time-float-corner,
+.mejs-time-float-current,
+.mejs-time-hovered,
+.mejs-time-loaded,
+.mejs-time-marker,
+.mejs-time-total,
+.mejs-horizontal-volume-total,
+.mejs-time-handle-content {
+  height: 3px  !important;
+}
+
+.mejs-time-handle-content {
+  top: -6px  !important;
+}
+
+.mejs-time-total {
+  margin-top: 8px  !important;
+}
+
+.mejs-horizontal-volume-total {
+  top: 19px;
+}

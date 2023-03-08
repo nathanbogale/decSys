@@ -1,0 +1,26 @@
+.dpr-star-rating .star-full:before {
+content: "\e9d9";
+}
+ 
+.dpr-star-rating .star-half:before {
+content: "\e9d8";
+}
+ 
+.dpr-star-rating .star-empty:before {
+content: "\e9d7";
+}
+ 
+.dpr-star-rating .star {
+color: #F8C45A;
+display: inline-block;
+font-family: 'dpr-icomoon';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+height: 14px;
+line-height: 1;
+text-align: center;
+text-decoration: inherit;
+vertical-align: top;
+width: 14px;
+}

@@ -1,0 +1,211 @@
+/*------------------------------------*
+	All Devices under 960px
+*------------------------------------*/
+@media only screen and (max-width: 959px) {
+			
+	/* default breakpoint */
+	body.default-switchpoint {
+		#dpr-logo.in-center-header {
+			display:block;
+		}
+		
+		#dpr-header.top-header .dpr-adeline-social-menu {
+		display:none;
+		} 
+
+		#dpr-header.top-header #dpr-logo {
+		float:left;
+		}
+
+		#dpr-logo.has-mobile-logo {
+			.custom-logo-link {
+				display: none;
+			}
+
+			.mobile-logo-link {
+				display: block;
+			}
+		}
+
+		.is-sticky #dpr-logo.has-mobile-logo {
+			.mobile-logo-link {
+				display: none;
+			}
+
+			.sticky-logo-link {
+				display: block;
+			}
+		}
+
+		#dpr-header.center-header #dpr-logo {
+	    	display: block;
+	    }
+
+		#dpr-top-bar-nav,
+		#dpr-navigation-wrapper,
+		.dpr-adeline-social-menu {
+			display: none;
+		}
+
+		#dpr-adeline-mobile-menu-icon {
+			display: block;
+		}
+
+		#dpr-top-bar.has-no-content #dpr-top-bar-social {
+			text-align: center;
+
+			&.dpr-top-bar-left,
+			&.dpr-top-bar-right {
+				position: inherit;
+				left: auto;
+				right: auto;
+				float: none;
+				height: auto;
+				line-height: 1.5em;
+				margin-top: 0;
+			}
+
+			li {
+				float: none;
+    			display: inline-block;
+			}
+		}
+
+		&.vertical-header-style #dpr-outer-wrapper {
+		    margin: 0 !important;
+		}
+		
+		.minimal-header {
+			.menu-bar-wrapper {
+				display:none;
+			}		
+		}
+		
+		#dpr-header.vertical-header {
+			position: relative;
+		    width: 100%;
+		    left: 0 !important;
+		    right: 0 !important;
+
+		    #dpr-header-inner {
+		    	@include display-flex();
+				@include align-items( center );
+				flex-direction:row;
+		    	padding: 0 5%;
+
+			    > *:not(#dpr-adeline-mobile-menu-icon) {
+				    display: none;
+				}
+
+			    > * {
+				    padding: 0 !important;
+				}
+
+				#dpr-logo {
+					display: block;
+					margin: 0;
+					width: 50%;
+					text-align: left;
+
+				}
+
+				#dpr-adeline-mobile-menu-icon {
+					width: 50%;
+					text-align: right;
+				}
+			}
+
+			.vertical-toggle {
+				display: none;
+			}
+		}
+
+		&.vh-expandable {
+	    	.vertical-toggle {
+				display: none;
+			}
+	    }
+	}
+	
+}
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+	.hide-tablet-mobile { display: none !important; }
+}
+
+/*------------------------------------*
+	Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+	.hide-mobile { display: none !important; }
+}
+
+/*------------------------------------*
+	Visibility
+*------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.hide-tablet { display: none !important; }
+}
+
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+	h1 {
+		font-size: 50px;
+		line-height: 1.1;
+	}
+	h2 {
+		font-size: 45px;
+	}
+	h3 {
+		font-size: 40px;
+	}
+	h4 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width:681px) and (max-width:769px) {
+
+	h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 45px;
+	}
+	h3 {
+		font-size: 40px;
+	}
+	h4 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width:680px) {
+
+	.centered-subheader .subheader-title {
+	    padding: 0;	  
+	}
+	h1 {
+		font-size: 45px;
+		line-height: 1.1;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 35px;
+	}
+	h4 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width:959px) {
+
+	.widget-area.sidebar-primary {
+		padding:0;
+	}
+}

@@ -1,0 +1,51 @@
+/**
+ * Link Format
+ */
+.post-link-wrapper {
+	@include transition( all .3s ease );
+	overflow:hidden;
+	background-color: $color-5;
+		&:hover {
+			background-color: $color-3;
+		}
+}
+
+.post-link-content,
+.post-link-author {
+	position: relative;
+    color: #fff;
+    font-size: 22px;
+	font-weight:600;
+    padding: 20px 30px;
+    line-height: 1.6;
+    z-index: 1;
+}
+.post-link-content a {
+	font-size:30px;
+	text-align:center;
+	font-size:30px;
+	font-weight:800;
+	padding:20px;
+	display:block;
+	color:#ffffff !important;
+	
+}
+.post-link-icon {
+	@include transform(  rotateZ(-15deg));
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    font-size: 140px;
+    @include opacity( 0.2 );
+    z-index: -1;
+}
+
+.post-link-author {
+	font-size: 12px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 1px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+	text-align:center;
+}

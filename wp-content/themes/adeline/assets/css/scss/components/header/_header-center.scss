@@ -1,0 +1,97 @@
+#dpr-header.center-header {
+
+	#dpr-logo.in-center-header {
+			display:none;
+	}
+	
+	.dpr-adeline-social-menu {
+		position:absolute;
+		right:0;
+	}
+	
+	#dpr-navigation-wrapper {
+		float: none;
+	    width: 100%;
+	    right: auto;
+
+	    .navigation {
+	    	@include display-flex();
+			@include align-items( center );
+	    }
+
+		.middle-dpr-logo {
+		    width: 18%;
+		    text-align: center;
+
+		    a img {
+				width: auto;
+				vertical-align: middle;
+			    @include transition( all .3s ease-in-out );
+			}
+
+		}
+
+	    .left-menu,
+	    .right-menu {
+	    	position: relative;
+		    width: 38%;
+	    }
+
+	    .left-menu {
+	    	float: left;
+	    }
+
+	    .right-menu {
+	    	float: right;
+	    }
+
+	    .dropdown-menu > li {
+	    	float: none;
+    		display: inline-block;
+	    }
+	}
+
+    .centered {
+	    .left-menu,
+	    .right-menu {
+		    text-align: center;
+	    }
+	}
+
+    .outside-aligned .left-menu {
+    	text-align: left;
+	}
+
+    .outside-aligned .right-menu {
+    	text-align: right;
+	}
+
+    .inside-aligned .left-menu {
+    	text-align: right;
+	}
+
+    .inside-aligned .right-menu {
+    	text-align: left;
+	}
+
+	#searchform-expandable-search.show {
+		max-width: 100% !important;
+	}
+
+	&.expandable-search {
+		#dpr-navigation .middle-dpr-logo {
+		    @include transition( opacity .3s );
+		}
+
+		#dpr-navigation.hide .middle-dpr-logo {
+			visibility: hidden;
+		    @include opacity( 0 );
+		}
+	}
+}
+#dpr-header.center-header #dpr-navigation-wrapper .middle-dpr-logo {
+    width: 12%;
+ }
+#dpr-header.center-header #dpr-navigation-wrapper .left-menu {
+    width: 46%;
+ }

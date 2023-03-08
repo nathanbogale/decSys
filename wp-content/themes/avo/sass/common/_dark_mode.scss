@@ -1,0 +1,162 @@
+    
+h1, h2, h3, h4, h5, h6,.fn.comment-author .url,.pagination li a:hover,.sidebar .recent-posts-widget .widget-post-content h3 a,
+.woocommerce .woocommerce-cart-form table .actions .coupon #coupon_code,.woocommerce .quantity input[type='number'],
+.woocommerce .quantity .quantity-nav .quantity-button.quantity-up,.avo-text-mode1 {
+	color: #fff;
+}
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li a,
+.woocommerce .quantity .quantity-nav .quantity-button,
+.woocommerce table td.product-remove a,.woocommerce .cart-collaterals .cart_totals table th,.woocommerce .button,
+.woocommerce div.product form.cart .button,.woocommerce .woocommerce-tabs ul.tabs li a,.woocommerce button{
+	color: #fff !important;
+}
+.error-text,.fn.comment-author,.woocommerce .quantity input[type='number'],.avo-text-mode2{
+    color: #ccc;
+}
+.blog-wrapper,form textarea,input,.page-content-wrapper {
+	background: #0C0F16; 
+}
+.gray-bg,.avo-section-mode2,.tags-bottom a,blockquote {
+	background: #11141B;
+}
+.comment-body,.related-inner{
+	background: #121a23;
+}
+.swork-line{
+	background: #fff;
+}
+.comment-reply-link,.pagination>li>a, .pagination>li>span,.avo-section-mode1,.woocommerce-tabs .panel{
+	background-color: #0c0f16;
+}
+.widget_categories ul li.cat-item span,.share-box a{
+	background-color: #11141B;
+}
+.avo-section-mode3{
+	background-color: #121a23;
+}
+.border-post,.searchform input[type=search],form textarea,input,.img-pagi,.comment-form-comment:before,
+.comment-meta .comment-edit-link,.post.sticky,.sidebar .recent-posts-widget:not(:last-child), .tagcloud a,
+ .post-bottom,.woocommerce .woocommerce-cart-form table .actions .coupon #coupon_code,
+ .woocommerce .quantity .quantity-nav .quantity-button.quantity-up {
+	border-color: #333;
+}
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li, .woocommerce table,
+ .woocommerce table th,.woocommerce table td,.woocommerce .button,.woocommerce div.product form.cart .button,
+ .woocommerce button,.woocommerce .woocommerce-tabs .woocommerce-Tabs-panel {
+	border-color: #333!important;
+}
+.custom-logo .custom-logo-dark,.avo-logo-dark{
+	display: none;
+}
+.custom-logo .custom-logo-light,.avo-logo-light{
+	display: initial;
+}
+
+// Dark menu
+.header.white-header{
+	background:#11141b;    
+	box-shadow: 0 0 5px 0 #333; 
+} 
+.header.white-header .navigation li a,.custom-absolute-menu .is-sticky .cart-contents:before,.custom-absolute-menu .cart-contents:before{
+	color: #e2dcdc; 
+}
+.header .cart-contents:before {
+	color: #e2dcdc; 
+}
+.header.custom-absolute-menu .is-sticky .logo-dark{
+	display: initial; 
+}
+.header.custom-absolute-menu .is-sticky .logo-white{
+	display: none; 
+}
+.header.not-custom-menu .logo-d-mode{
+	display: none; 
+}
+.header.not-custom-menu .logo-d-mode{
+	display: initial; 
+}
+.header.not-custom-menu .logo-l-mode{
+	display: none; 
+}
+.header .is-sticky .stuck-nav{
+	background:#11141b; 
+    box-shadow: 0 0 5px 0 #333;
+}
+.header.custom-absolute-menu .is-sticky .navigation li a{
+	color: #e2dcdc; 
+}
+.header.custom-absolute-menu .is-sticky .search-icon-header a i{
+	color: #e2dcdc; 
+}
+.header.custom-absolute-menu .is-sticky .header-icon li a{
+	color: #e2dcdc; 
+}
+.header .search-icon-header a i{color: #e2dcdc; 
+}
+.header .header-icon li a{
+	color: #e2dcdc; 
+}
+.header .menu-wrapper ul li ul {
+	background:#23282d; 
+}
+.header .menu-wrapper .menu ul.sub-menu li a{
+	color: #bfbaba;
+}
+.header .header-wrapper .menu-wrapper ul li.mega-menu > ul.sub-menu > li{
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header .menu-wrapper ul li.mega-menu > ul.sub-menu{
+	background-color: #23282d !important;
+}
+.header .header-wrapper .menu-wrapper .mega-menu ul.sub-menu li a {
+    color: #bfbaba;
+    font-weight: 400;
+    &:hover{
+    	color: #fff;
+    }
+}
+.header .header-wrapper .menu-wrapper ul li.mega-menu > ul.sub-menu > li > a {
+	color: #fff;
+}
+
+.custom-absolute-menu .is-sticky .hamburger__icon, .custom-absolute-menu .is-sticky .hamburger__icon:before, 
+.custom-absolute-menu .is-sticky .hamburger__icon:after{
+	background-color: #fff;
+}
+
+.fat-nav{
+	background: #23282d;
+	li a{
+		color: #bfbaba;
+	}
+	li>a {
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+}
+.hamburger.active .hamburger__icon{
+	background-color: transparent;
+}
+
+.hamburger.active .hamburger__icon:before, .hamburger.active .hamburger__icon:after{
+	background-color:#fff;
+}
+.white-header .hamburger__icon, .white-header .hamburger__icon::before, .white-header .hamburger__icon::after{
+	background: #b1abab;
+}
+
+// -----------------Post list-------------
+
+//Style-4
+.post-list.style-4 {
+
+	.blog-col-inner{
+		background:#151921;
+
+	}
+	.pagination>li>a, .pagination>li>span{
+		border-color: #666;
+	}
+	.pagination > .active > a{
+		border-color: #fff;
+	}
+}

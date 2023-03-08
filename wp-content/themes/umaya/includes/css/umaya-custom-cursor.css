@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+Custom mouse cursor
+--------------------------------------------------------------*/
+
+
+.cursor-anim-enable * {
+	cursor: none !important;
+}
+
+.cursor-anim-enable .pointer {
+	display: block;
+}
+
+.js-touch .cursor-anim-enable .pointer {
+	display: none;
+}
+
+.pointer {
+	overflow: hidden;
+	width:  30px;
+	height: 30px;
+	position: fixed;
+	left: -100px;
+	top: 50%;
+	z-index: 9999;
+	border: 2px solid var(--main-color);
+	border-radius: 50%;
+	pointer-events: none;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-transition-property: border, background, -webkit-transform, -webkit-box-shadow;
+	        transition-property: border, background, -webkit-transform, -webkit-box-shadow;
+	     -o-transition-property: border, background, transform, box-shadow;
+	        transition-property: border, background, transform, box-shadow;
+	        transition-property: border, background, transform, box-shadow, -webkit-transform, -webkit-box-shadow;
+	-webkit-transition-duration: .5s;
+	     -o-transition-duration: .5s;
+	        transition-duration: .5s;
+	-webkit-transition-timing-function: cubic-bezier(.19, .94, .336, 1);
+	     -o-transition-timing-function: cubic-bezier(.19, .94, .336, 1);
+	        transition-timing-function: cubic-bezier(.19, .94, .336, 1);
+}
+
+body.js-page-out .pointer {
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	    -ms-transform: translate(-50%, -50%) scale(0);
+	        transform: translate(-50%, -50%) scale(0);
+}
+
+.js-pointer.js-black {
+	border: 2px solid #000;
+}
+
+.js-pointer.js-large {
+	-webkit-box-shadow: 0 0 12px var(--main-color);
+	        box-shadow: 0 0 12px var(--main-color);
+	border: none;
+	-webkit-transform: translate(-50%, -50%) scale(2.5);
+	    -ms-transform: translate(-50%, -50%) scale(2.5);
+	        transform: translate(-50%, -50%) scale(2.5);
+}
+
+.js-pointer.js-large.js-black {
+	-webkit-box-shadow: 0 0 12px #000;
+	        box-shadow: 0 0 12px #000;
+}
+
+.js-pointer.js-small {
+	-webkit-box-shadow: 0 0 30px var(--main-color);
+	        box-shadow: 0 0 30px var(--main-color);
+	-webkit-transform: translate(-50%, -50%) scale(.5);
+	    -ms-transform: translate(-50%, -50%) scale(.5);
+	        transform: translate(-50%, -50%) scale(.5);
+}
+
+.js-pointer.js-small.js-black {
+	-webkit-box-shadow: 0 0 30px #000;
+	        box-shadow: 0 0 30px #000;
+}
+
+.js-pointer.js-right,
+.js-pointer.js-zoom,
+.js-pointer.js-open {
+	-webkit-box-shadow: 0 0 5px var(--main-color);
+	        box-shadow: 0 0 5px var(--main-color);
+	border: none;
+	-webkit-transform: translate(-50%, -50%) scale(2.5);
+	    -ms-transform: translate(-50%, -50%) scale(2.5);
+	        transform: translate(-50%, -50%) scale(2.5);
+}
+
+.js-pointer.js-right.js-black,
+.js-pointer.js-zoom.js-black,
+.js-pointer.js-open.js-black {
+	-webkit-box-shadow: 0 0 5px #000;
+	        box-shadow: 0 0 5px #000;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.pointer__inner {
+	position: absolute;
+	left: 50%;
+	top:  50%;
+	opacity: 0;
+	font-size: 10px;
+	color: var(--main-color);
+	-webkit-transform: translate(-100%, -50%);
+	    -ms-transform: translate(-100%, -50%);
+	        transform: translate(-100%, -50%);
+	-webkit-transition: .4s cubic-bezier(.17, .85, .438, .99);
+	     -o-transition: .4s cubic-bezier(.17, .85, .438, .99);
+	        transition: .4s cubic-bezier(.17, .85, .438, .99);
+}
+
+.js-black .pointer__inner {
+	color: #000;
+}
+
+.pointer__inner.fa-search, 
+.pointer__inner.fa-link {
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	    -ms-transform: translate(-50%, -50%) scale(0);
+	        transform: translate(-50%, -50%) scale(0);
+}
+
+.js-right .pointer__inner.fa-long-arrow-alt-right {
+	opacity: 1;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-transition-delay: .2s;
+	     -o-transition-delay: .2s;
+	        transition-delay: .2s;
+}
+
+.js-zoom .pointer__inner.fa-search,
+.js-open .pointer__inner.fa-link  {
+	opacity: 1;
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	    -ms-transform: translate(-50%, -50%) scale(1);
+	        transform: translate(-50%, -50%) scale(1);
+	-webkit-transition-delay: .2s;
+	     -o-transition-delay: .2s;
+	        transition-delay: .2s;
+}
+
+.js-pointer.js-none {
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	    -ms-transform: translate(-50%, -50%) scale(0);
+	        transform: translate(-50%, -50%) scale(0);
+}
+.nojq * {
+	cursor: pointer!important;
+}
+

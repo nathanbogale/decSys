@@ -1,0 +1,428 @@
+
+/*----------Title Style 1----------*/
+.avo-title.style-1{ 
+	&.rtl{
+		direction: rtl;
+		.sub-title{
+			padding-right: 20px;
+			span{
+			    left: initial;
+    			right: 6px;
+    			&:last-of-type{
+				    right: 0px;
+    			}
+			}
+		}
+	}
+
+	.sub-title{
+		position: relative;
+		padding-left: 20px;
+		h6{
+			font-family: 'Barlow Condensed', sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			margin-top: 0;
+		}
+
+		span{
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: $primary-color;
+			position: absolute;
+			left: 6px;
+			bottom: 5px;
+
+			&:first-of-type{
+				bottom: 11px;
+			}
+
+			&:last-of-type{
+				left: 0px;
+			}
+		}
+	}
+	.main-title{
+		font-weight: 600;
+		line-height: 1.5;
+		margin-bottom: 15px;
+		font-size: 35px;
+	}
+
+	p{
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 2;
+		margin: 0;
+		font-family: 'Poppins', sans-serif;
+	}
+
+}
+// Mobile size
+@media screen and (max-width: 767px) {
+	.avo-title.style-1 .main-title{
+		font-size: 28px;
+	}
+}
+
+// Light Mode
+.avo-title.style-1{
+	.main-title,.sub-title h6{
+		color: #0c0f16; 
+	}
+
+	p{
+		color: #777;
+	}
+	.simple-btn:after{
+	    background: rgba(0, 0, 0, 0.05);
+	}
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-title.style-1{
+	.main-title,.sub-title h6{
+		color:#fff; 
+	}
+
+	p{
+		color: #c8c8c8;
+	}
+	.simple-btn:after{
+	    background: rgba(255, 255, 255, 0.05);
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-title.style-1{
+		.main-title,.sub-title h6{
+			color:#fff;
+		}
+
+		p{
+			color: #c8c8c8;
+		}
+		.simple-btn:after{
+		    background: rgba(255, 255, 255, 0.05);
+		}
+	}
+}
+
+/*----------Title Style 2----------*/
+.avo-title.style-2{
+	
+	h2{
+		font-weight: 700;
+		font-size: 4vw;
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		span{
+			color: transparent;
+		}
+
+		b{
+			
+			span{
+				-webkit-text-stroke-width: 0;
+			}
+		}
+	}
+
+}
+// Mobile size
+@media (max-width: 767px) {
+	.avo-title.style-2 h2{
+		font-size: 6vw;
+	}
+}
+
+// Light Mode
+.avo-title.style-2{
+	h2{
+		color: #0c0f16 ;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #0c0f16;
+	}
+	b span{
+		color: #0c0f16 ;
+	}
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-title.style-2{
+	h2{
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #fff;
+		color: transparent;
+	}
+	b span{
+		color: #fff;
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-title.style-2{
+		h2{
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #fff;
+			color: transparent;
+		}
+		b span{
+			color: #fff;
+		}
+	}
+}
+/*----------Header Style 3----------*/
+
+.avo-header.style-3{
+
+	&.rtl{
+		.capt h2{
+			letter-spacing: 0 !important;
+		}
+		.col-lg-9{
+			float: right!important;
+		}
+	}
+
+	.works-header{
+		min-height: 80vh;
+
+		&.hfixd{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+
+		.capt{
+			
+			h4{
+				font-weight: 200;
+				font-size: 24px;
+				line-height: 1.8;
+				color: #fff;
+			}
+
+			h2{
+				font-size: 60px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				
+
+				span{
+					display: block;
+					font-size: 20px;
+					font-weight: 300;
+					text-transform: capitalize;
+					color: $primary-color;
+				}
+			}
+
+			.bactxt{
+				font-size: 30vw;
+				font-weight: bold;
+				color: transparent;
+				z-index: 1;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+// Light Mode
+.avo-header.style-3{
+	.works-header{
+		background: #fff;
+		h2{
+			color: #0c0f16 ;
+		}
+		p{
+		    color: #777;
+		}
+		.bactxt{
+    		-webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+		}
+	}
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-header.style-3{
+	.works-header{
+		background: #0c0f16;
+		h2{
+			color: #fff;
+		}
+		p{
+		    color: #c8c8c8;
+		}
+		.bactxt{
+    		-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+		}
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-header.style-3{
+		.works-header{
+			background: #0c0f16;
+			h2{
+				color: #fff;
+			}
+			p{
+			    color: #c8c8c8;
+			}
+			.bactxt{
+	    		-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+			}
+		}
+	}
+}
+
+
+/*----------Header Style 4----------*/
+.avo-header.style-4{
+
+	.pages-header{
+		height: 75vh;
+
+		.cont{
+
+			h1{
+				font-size: 75px;
+				margin-bottom: 20px;
+			}
+
+			.path{
+				color: #fff;
+				font-size: 17px;
+
+				.active{
+					color: $primary-color;
+				}
+
+				span{
+					margin: 0 10px;
+					font-size: 17px;
+					color: $primary-color;
+				}
+				a{
+					color:#fff;
+				}
+				em{
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+/*----------Header Style 5----------*/
+
+.avo-header.style-5{
+
+	.sec-head{
+		position: relative;
+		margin: 0 auto;
+
+		h6{
+			color: $primary-color;
+			font-weight: 300;
+			font-size: 17px;
+			text-transform: uppercase;
+			letter-spacing: 14px;
+			margin-bottom: 5px;
+		}
+
+		h3{
+			font-size: 80px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-shadow: 0 8px rgba(255,255,255,.05);
+		}
+
+		.tbg{
+			position: absolute;
+			bottom: 50%;
+			left: 0;
+			width: 100%;
+			font-size: 10vw;
+			font-weight: 700;
+			color: transparent;
+			-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+			opacity: .3;
+			letter-spacing: 3px;
+		}
+
+		&.tr-head{
+			text-align: right;
+			margin-bottom: 0;
+
+			.tbg{
+				text-align: left;
+			}
+		}
+	}
+}
+
+// Mobile size
+@media screen and (max-width: 767px) {
+	.avo-header.style-5 .sec-head h3{
+		font-size: 40px;
+	}
+}
+
+// Light Mode
+.avo-header.style-5{
+	.sec-head{
+		h3{
+			text-shadow: 0 8px rgba(0,0,0,.05);
+		}
+		.tbg{
+			-webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+		}
+	}
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-header.style-5{
+	.sec-head{
+		h3{
+			text-shadow: 0 8px rgba(255,255,255,.05);
+		}
+		.tbg{
+			-webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+		}
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-header.style-5{
+		.sec-head{
+			h3{
+				text-shadow: 0 8px rgba(255,255,255,.05);
+			}
+			.tbg{
+				-webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+/**
+ * Top Bar Social
+ */
+#dpr-top-bar-social {
+	display: table-cell;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	width:auto;
+  }
+
+  li {
+    float: left;
+
+    a {
+      display: block;
+      float: left;
+      font-size: 14px;
+      color: $color-13;
+      padding: 0 6px;
+    }
+  }
+
+
+  li a {
+    &.dpr-adeline-twitter a:hover { color: #46d4fe; }
+    &.dpr-adeline-facebook a:hover { color: #37589b; }
+    &.dpr-adeline-google-plus a:hover { color: #de5a49; }
+    &.dpr-adeline-pinterest-p a:hover { color: #cb2027; }
+    &.dpr-adeline-dribbble a:hover { color: #ea4c89; }
+    &.dpr-adeline-vk a:hover { color: #597BA5; }
+    &.dpr-adeline-instagram a:hover { color: #3F729B; }
+    &.dpr-adeline-linkedin a:hover { color: #3399CC; }
+    &.dpr-adeline-tumblr a:hover { color: #2C4762; }
+    &.dpr-adeline-github-alt a:hover { color: #60b044; }
+    &.dpr-adeline-flickr a:hover { color: #fa4086; }
+    &.dpr-adeline-skype a:hover { color: #00AFF0; }
+    &.dpr-adeline-youtube a:hover { color: #C4302B; }
+    &.dpr-adeline-vimeo a:hover { color: #1ab7ea; }
+    &.dpr-adeline-vine a:hover { color: #00bf8f; }
+    &.dpr-adeline-xing a:hover { color: #006464; }
+    &.dpr-adeline-yelp a:hover { color: #C41200; }
+    &.dpr-adeline-tripadvisor a:hover { color: #589442; }
+    &.dpr-adeline-odnoklassniki a:hover { color: #ed812b; }    
+    &.dpr-adeline-rss a:hover { color: #ff7900; }
+    &.dpr-adeline-envelope-o a:hover { color: $color-5; }
+  }
+}
+.text-right #dpr-top-bar-social {
+	float:right;
+}
+
+/*------------------------------------*
+  Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+  #dpr-top-bar-social {
+	text-align: center;
+
+    &.dpr-top-bar-left,
+    &.dpr-top-bar-right {
+      position: inherit;
+      left: auto;
+      right: auto;
+      float: none;
+      height: auto;
+      line-height: 1.5em;
+      margin-top: 0;
+    }
+
+    li {
+      float: none;
+      display: inline-block;
+    }
+  }
+  
+}

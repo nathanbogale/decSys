@@ -1,0 +1,57 @@
+/**
+ *  Quote format
+ */
+.post-quote-wrapper {
+	@include transition( all .3s ease );
+	background-color: $color-5;
+		&:hover {
+			background-color: $color-3;
+		}
+		blockquote {
+		  font-style: italic;
+		  margin: 20px 40px 20px 0;
+		  padding-left:0;
+		  border: none !important;
+		}
+	cite, cite a, cite::before {
+	color: #fff;
+	}
+	cite:hover a, cite:hover:before {
+		opacity: 0.6;
+	}
+}
+
+.post-quote-content,
+.post-quote-author {
+	position: relative;
+    color: #fff;
+    font-size: 22px;
+	font-weight:600;
+    padding: 20px 30px;
+    line-height: 1.6;
+    z-index: 1;
+}
+.post-quote-content cite {
+	font-style:normal;
+	font-size:14px;
+	
+}
+.post-quote-icon {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 120px;
+    @include opacity( 0.2 );
+    z-index: -1;
+}
+
+.post-quote-author {
+	font-size: 12px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 1px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+

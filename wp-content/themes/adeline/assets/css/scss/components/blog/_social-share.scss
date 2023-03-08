@@ -1,0 +1,828 @@
+// Transition
+@mixin transition( $args ) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+// Display inline flex
+@mixin display-inline-flex() {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+}
+
+// Display flex
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// Flex wrap
+@mixin flex-wrap( $args ) {
+    -webkit-flex-wrap: $args;
+    -ms-flex-wrap: $args;
+    flex-wrap: $args;
+}
+
+// Align items
+@mixin align-items( $args ) {
+    -webkit-align-items: $args;
+	-ms-flex-align: $args;
+	align-items: $args;
+}
+
+// Justify content
+@mixin justify-content( $args ) {
+	-webkit-justify-content: $args;
+	-ms-flex-pack: $args;
+	justify-content: $args;
+}
+
+// Opacity
+@mixin opacity( $args ) {
+    -moz-opacity: $args;
+    -webkit-opacity: $args;
+    opacity: $args;
+}
+
+/**
+ * DPR Social Share
+ */
+.dpr-share {
+	
+	.theme-heading.social-share-title {
+		font-size:14px !important;
+		text-transform: uppercase;
+	}
+	
+	ul {
+		margin: 0;
+	    padding: 0;
+	    list-style: none;
+
+		li {
+		    margin-right: 4px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+		    a {
+			    @include display-inline-flex();
+				@include align-items( center );
+				@include justify-content( center );
+				position: relative;
+				width: 40px;
+				height: 40px;
+				line-height: 1;
+			    border-radius: 30px;
+		    	overflow: hidden;
+
+			    .dpr-share-icon {
+					fill: #fff;
+				    width: 16px;
+				    height: 16px;
+				    @include transition( all 0.3s ease );
+				}
+			}
+		}
+	}
+
+	&.left-side ul {
+		float: right;
+
+		li {
+			float: left;
+		}
+	}
+
+	&.top ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+// Minimal style
+
+.dpr-share.minimal {
+	ul li {
+		a {
+		
+		width:25px;
+		
+			.dpr-share-icon {
+				fill: $color-17;
+			}
+		}
+
+		&.twitter a:hover {
+			color: #00aced;
+
+			.dpr-share-icon {
+				fill: #00aced;
+			}
+		}
+
+		&.facebook a:hover {
+			color: #3b5998;
+
+			.dpr-share-icon {
+				fill: #3b5998;
+			}
+		}
+
+		&.google-plus a:hover {
+			color: #dd4b39;
+
+			.dpr-share-icon {
+				fill: #dd4b39;
+			}
+		}
+
+		&.linkedin a:hover {
+			color: #3399CC;
+
+			.dpr-share-icon {
+				fill: #3399CC;
+			}
+		}
+
+		&.pinterest a:hover {
+			color: #cb2027;
+
+			.dpr-share-icon {
+				fill: #cb2027;
+			}
+		}
+		&.blogger a:hover {
+			color: #f57d00;
+
+			.dpr-share-icon {
+				fill: #f57d00;
+			}
+		}
+
+		&.buffer a:hover {
+			color: #323543;
+
+			.dpr-share-icon {
+				fill: #323543;
+			}
+		}
+
+		&.viber a:hover {
+			color: #9d62cc;
+
+			.dpr-share-icon {
+				fill: #9d62cc;
+			}
+		}
+
+		&.vk a:hover {
+			color: #3673be;
+
+			.dpr-share-icon {
+				fill: #3673be;
+			}
+		}
+
+		&.reddit a:hover {
+			color: #ff5c1f;
+
+			.dpr-share-icon {
+				fill: #ff5c1f;
+			}
+		}
+
+		&.stumbleupon a:hover {
+			color: #e64924;
+
+			.dpr-share-icon {
+				fill: #e64924;
+			}
+		}
+		
+		&.newsvine a:hover {
+			color: #00642e;
+
+			.dpr-share-icon {
+				fill: #00642e;
+			}
+		}
+
+		&.evernote a:hover {
+			color: #2dbe60;
+
+			.dpr-share-icon {
+				fill: #2dbe60;
+			}
+		}
+
+		&.delicious a:hover {
+			color: #3399ff;
+
+			.dpr-share-icon {
+				fill: #3399ff;
+			}
+		}
+
+		&.digg a:hover {
+			color: #0056e2;
+
+			.dpr-share-icon {
+				fill: #0056e2;
+			}
+		}
+
+		&.livejournal a:hover {
+			color: #336697;
+
+			.dpr-share-icon {
+				fill: #336697;
+			}
+		}
+
+		&.tumblr a:hover {
+			color: #35465c;
+
+			.dpr-share-icon {
+				fill: #35465c;
+			}
+		}
+
+		&.viadeo a:hover {
+			color: #ff7452;
+
+			.dpr-share-icon {
+				fill: #ff7452;
+			}
+		}
+		&.odnoklassniki a:hover {
+			color: #ED8207;
+
+			.dpr-share-icon {
+				fill: #ED8207;
+			}
+		}		
+	}
+}
+
+// Outlined style
+.dpr-share.outlined {
+	ul li {
+		a {
+			border: 1px solid $color-13;
+
+			.dpr-share-icon {
+				fill: $color-17;
+			}
+		}
+
+		&.twitter a:hover {
+			color: #00aced;
+			border-color: #00aced;
+
+			.dpr-share-icon {
+				fill: #00aced;
+			}
+		}
+
+		&.facebook a:hover {
+			color: #3b5998;
+			border-color: #3b5998;
+
+			.dpr-share-icon {
+				fill: #3b5998;
+			}
+		}
+
+		&.google-plus a:hover {
+			color: #dd4b39;
+			border-color: #dd4b39;
+
+			.dpr-share-icon {
+				fill: #dd4b39;
+			}
+		}
+
+		&.linkedin a:hover {
+			color: #3399CC;
+			border-color: #3399CC;
+
+			.dpr-share-icon {
+				fill: #3399CC;
+			}
+		}
+
+		&.pinterest a:hover {
+			color: #cb2027;
+			border-color: #cb2027;
+
+			.dpr-share-icon {
+				fill: #cb2027;
+			}
+		}
+
+		&.blogger a:hover {
+			color: #f57d00;
+			border-color: #f57d00;
+
+			.dpr-share-icon {
+				fill: #f57d00;
+			}
+		}
+
+		&.buffer a:hover {
+			color: #323543;
+			border-color: #323543;
+
+			.dpr-share-icon {
+				fill: #323543;
+			}
+		}
+
+		&.viber a:hover {
+			color: #9d62cc;
+			border-color: #9d62cc;
+
+			.dpr-share-icon {
+				fill: #9d62cc;
+			}
+		}
+
+		&.vk a:hover {
+			color: #3673be;
+			border-color: #3673be;
+
+			.dpr-share-icon {
+				fill: #3673be;
+			}
+		}
+
+		&.reddit a:hover {
+			color: #ff5c1f;
+			border-color: #ff5c1f;
+
+			.dpr-share-icon {
+				fill: #ff5c1f;
+			}
+		}
+
+		&.stumbleupon a:hover {
+			color: #e64924;
+			border-color: #e64924;
+
+			.dpr-share-icon {
+				fill: #e64924;
+			}
+		}
+
+		&.evernote a:hover {
+			color: #2dbe60;
+			border-color: #2dbe60;
+
+			.dpr-share-icon {
+				fill: #2dbe60;
+			}
+		}
+
+		&.newsvine a:hover {
+			color: #00642e;
+			border-color: #00642e;
+
+			.dpr-share-icon {
+				fill: #00642e;
+			}
+		}
+		
+		&.delicious a:hover {
+			color: #3399ff;
+			border-color: #3399ff;
+
+			.dpr-share-icon {
+				fill: #3399ff;
+			}
+		}
+
+		&.digg a:hover {
+			color: #0056e2;
+			border-color: #0056e2;
+
+			.dpr-share-icon {
+				fill: #0056e2;
+			}
+		}
+
+		&.livejournal a:hover {
+			color: #336697;
+			border-color: #336697;
+
+			.dpr-share-icon {
+				fill: #336697;
+			}
+		}
+
+		&.tumblr a:hover {
+			color: #35465c;
+			border-color: #35465c;
+
+			.dpr-share-icon {
+				fill: #35465c;
+			}
+		}
+
+		&.viadeo a:hover {
+			color: #ff7452;
+			border-color: #ff7452;
+
+			.dpr-share-icon {
+				fill: #ff7452;
+			}
+		}
+		&.odnoklassniki a:hover {
+			color: #ED8207;
+			border-color: #ED8207;
+
+			.dpr-share-icon {
+				fill: #ED8207;
+			}
+		}		
+	}
+}
+
+// Colored style
+.dpr-share.colored {
+	ul li {
+		a {
+			color: #fff;
+
+
+			.dpr-share-icon {
+				fill: #fff;
+			}
+		}
+
+		&.twitter a {
+			background-color: #00aced;
+		}
+
+		&.twitter a:hover {
+			background-color: lighten(#00aced,10%);
+		}
+
+
+		&.facebook a {
+			background-color: #3b5998;
+		}
+
+		&.facebook a:hover {
+			background-color: lighten(#3b5998,10%);
+		}
+
+		&.google-plus a {
+			background-color: #dd4b39;
+		}
+
+		&.google-plus a:hover {
+			background-color: lighten(#dd4b39,10%);
+		}
+
+		&.linkedin a {
+			background-color: #3399CC;
+		}
+
+		&.linkedin a:hover {
+			background-color: lighten(#3399CC,10%);
+		}
+
+		&.pinterest a {
+			background-color: #cb2027;
+		}
+
+		&.pinterest a:hover {
+			background-color: lighten(#cb2027,10%);
+		}
+
+		&.blogger a {
+			background-color: #f57d00;
+		}
+		
+		&.blogger a:hover {
+			background-color: lighten(#f57d00,10%);
+		}
+
+		&.buffer a {
+			background-color: #323543;
+		}
+		
+		&.buffer a:hover {
+			background-color: lighten(#323543,10%);
+		}
+
+		&.viber a {
+			background-color: #9d62cc;
+		}
+		&.viber a:hover {
+			background-color: lighten(#9d62cc,10%);
+		}
+		&.vk a {
+			background-color: #3673be;
+		}
+
+		&.vk a:hover {
+			background-color: lighten(#3673be,10%);
+		}
+
+		&.reddit a {
+			background-color: #ff5c1f;
+		}
+
+		&.reddit a:hover {
+			background-color: lighten(#ff5c1f,10%);
+		}
+		
+		&.stumbleupon a {
+			background-color: #e64924;
+		}
+
+		&.stumbleupon a:hover {
+			background-color: lighten(#e64924,10%);
+		}
+		
+		&.evernote a {
+			background-color: #2dbe60;
+		}
+
+		&.evernote a:hover {
+			background-color: lighten(#2dbe60,10%);
+		}
+		
+		
+		&.newsvine a {
+			background-color: #00642e;
+		}
+
+		&.newsvine a:hover {
+			background-color: lighten(#00642e,10%);
+		}
+		
+		&.delicious a {
+			background-color: #3399ff;
+		}
+
+		&.delicious a:hover {
+			background-color: lighten(#3399ff,10%);
+		}
+		
+		&.digg a {
+			background-color: #0056e2;
+		}
+
+		&.digg a:hover {
+			background-color: lighten(#0056e2,10%);
+		}
+		
+		&.livejournal a {
+			background-color: #336697;
+		}
+
+		&.livejournal a:hover {
+			background-color: lighten(#336697,10%);
+		}
+		
+		&.tumblr a {
+			background-color: #35465c;
+		}
+
+		&.tumblr a:hover {
+			background-color: lighten(#35465c,10%);
+		}
+
+		&.viadeo a {
+			background-color: #ff7452;
+		}
+		
+		&.viadeo a:hover {
+			background-color: lighten(#ff7452,10%);
+		}
+		&.odnoklassniki a {
+			background-color: #ED8207;
+		}
+		
+		&.odnoklassniki a:hover {
+			background-color: lighten(#ED8207,10%);
+		}		
+	}
+}
+
+// Rounded style
+.dpr-share.rounded {
+	ul li {
+		a {
+			background-color: $color-2;
+			color: #fff;
+
+			&:hover {
+				background-color: $color-5;
+			}
+
+			.dpr-share-icon {
+				fill: #fff;
+			}
+		}
+	}
+
+	&.has-title .dpr-adeline-share-icon-wrapper {
+		background-color: rgba(255,255,255,.08);
+	}
+}
+
+// Heading position
+.dpr-share {
+	.theme-heading {
+	    margin: 0;
+	    padding: 0;
+
+	    .text:before,
+	    .text:after {
+	    	display: none !important;
+	    }
+    }
+
+	&.left-side .theme-heading {
+		float: left;
+	    line-height: 40px;
+    }
+
+	&.top .theme-heading {
+		display: block;
+		margin-bottom: 10px;
+	    line-height: 1.6;
+	    text-align: center;
+    }
+}
+
+// Social name
+.dpr-share.has-title:not(.minimal) {
+	&.left-side .theme-heading {
+	    margin: 6px 0;
+	}
+
+	ul {
+	    @include display-flex();
+	    @include flex-wrap( wrap );
+	    @include justify-content( space-between );
+
+	    li {
+			margin: 6px;
+			-webkit-box-flex: 1;
+		    -moz-box-flex: 1;
+		    -webkit-flex: 1;
+		    -ms-flex: 1;
+		    flex: 1;
+
+			a {
+				min-width: 144px;
+				width: 100%;
+			}
+		}
+	}
+
+	.dpr-adeline-share-icon-wrapper {
+		display: block;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+		@include display-inline-flex();
+		@include align-items( center );
+		@include justify-content( center );
+		background-color: rgba(0,0,0,.08);
+	    padding: 0 12px;
+	    @include transition( all 0.3s ease );
+	}
+
+	.dpr-adeline-share-title {
+		display: block;
+		width: 100%;
+	    padding: 0 10px 0 50px;
+	    font-size: 15px;
+	    font-weight: 500;
+	    text-align: center;
+	}
+
+	&.outlined li {
+		a:hover .dpr-share-icon {
+			fill: #fff !important;
+		}
+
+		&.twitter a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #00aced;
+		}
+
+		&.facebook a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #3b5998;
+		}
+
+		&.google-plus a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #dd4b39;
+		}
+
+		&.linkedin a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #3399CC;
+		}
+
+		&.pinterest a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #cb2027;
+		}
+
+		&.blogger a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #f57d00;
+		}
+
+		&.buffer a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #323543;
+		}
+
+		&.viber a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #9d62cc;
+		}
+
+		&.vk a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #3673be;
+		}
+
+		&.reddit a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #ff5c1f;
+		}
+
+		&.evernote a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #2dbe60;
+		}
+
+		&.stumbleupon a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #e64924;
+		}
+
+		&.newsvine a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #00642e;
+		}
+
+		&.delicious a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #3399ff;
+		}
+
+		&.digg a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #0056e2;
+		}
+
+		&.livejournal a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #336697;
+		}
+		&.tumblr a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #35465c;
+		}
+
+		&.viadeo a:hover .dpr-adeline-share-icon-wrapper {
+			background-color: #ff7452;
+		}
+		&.odnoklassniki a:hover .dpr-activia-share-icon-wrapper {
+			background-color: #ED8207;
+		}		
+	}
+}
+
+// If no heading
+.dpr-share.no-section-title ul {
+	float: none;
+}
+
+// Customizer tweak for the social name
+.dpr-share {
+	.dpr-adeline-share-title {
+		display: none;
+	}
+}
+
+// If single post
+.single .dpr-share {
+	margin-top: 30px;
+    padding-top: 30px;
+}
+
+/*------------------------------------*
+	Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+	.dpr-share.left-side .theme-heading { float: none; margin: 0 0 20px; line-height: 1; text-align: center; }
+	.dpr-share.left-side ul { float: none; text-align: center; }
+	.dpr-share.left-side ul li { float: none; display: inline-block; }
+}

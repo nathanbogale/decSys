@@ -1,0 +1,210 @@
+.dpr-footer {
+	position: relative;
+	background-color: $color-3;
+}
+
+/**
+ * Footer widgets
+ */
+#footer-widgets {
+	
+	padding: 80px 0;
+	margin: 0;
+	color:#ccc;
+	
+	&.full-width-widgets { 
+	padding-left: 30px;
+	padding-right:30px;
+	color: darken( $color-1, 20% );
+	}
+	
+	.footer-box {
+		padding: 0 15px;
+		margin: 0;
+		
+		&:first-child {
+		padding-left: 0;
+		}
+		
+		&:last-child {
+		padding-right: 0;
+		}
+		
+		&:only-child {
+		padding-left: 0;
+		padding-right: 0;
+		}
+
+		.footer-widget {
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			ul li ul {
+			padding-left:20px;
+			}
+
+		}
+
+		.widget-title, .widget-title a.rsswidget {
+			color: $color-1;
+		}
+
+		a {
+			color: $color-1;
+
+			&:hover {
+				color: $color-5;
+			}
+		}
+	}
+
+	.contact-info-widget i,
+	.mailchimp-widget input[type="email"],
+	.posts-thumbnails-widget li,
+	.social-widget li a {
+		border-color: $color-11;
+	}
+
+	.mailchimp-widget input[type="email"]:focus {
+	    border-color: $color-5;
+	}
+
+	.tagcloud a {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 6px;
+		margin-bottom: 9px;
+		padding: 3px 12px 3px 12px;
+		background-color: $color-15;
+		border: 1px $color-15 solid;
+		border-radius: 5px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		font-size: 14px !important;
+		font-weight:400;
+		color: $color-6;
+		line-height: 24px;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		
+		&:hover {
+		background-color:$color-5;
+		border-color:$color-5;
+		color: $color-2 !important;
+		}
+	}
+}
+
+/**
+ * Parallax footer
+ */
+.parallax-footer {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.has-parallax-footer:not(.boxed-layout) #main {
+	@include box-shadow( 0 0 40px 0 rgba(0,0,0,0.10) );
+}
+
+.has-parallax-footer #main {
+	background-color: $color-1;
+	z-index:1;
+}
+
+
+.boxed-layout .parallax-footer {
+	width: 1280px;
+	left: auto;
+    right: auto;
+}
+
+/* Responsive columns */
+@media only screen and (min-width: 481px) and (max-width: 768px) { 
+	#footer-widgets.tablet-1-col .footer-box {
+		width: 100%;
+	}
+
+	#footer-widgets.tablet-2-col .footer-box {
+		width: 100% !important;
+
+		&:nth-child(3n) {
+			clear: left;
+		}
+	}
+
+	#footer-widgets.tablet-3-col .footer-box {
+		width: 100% !important;
+		clear: none;
+
+		&:nth-child(4n) {
+			clear: left;
+		}
+	}
+
+	#footer-widgets.tablet-4-col .footer-box {
+		width: 100% !important;
+
+		&:nth-child(5n) {
+			clear: left;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#footer-widgets.mobile-1-col .footer-box {
+		width: 100%;
+	}
+
+	#footer-widgets.mobile-2-col .footer-box {
+		width: 100% !important;
+
+		&:nth-child(3n) {
+			clear: left;
+		}
+	}
+
+	#footer-widgets.mobile-3-col .footer-box {
+		width: 100% !important;
+		clear: none;
+
+		&:nth-child(4n) {
+			clear: left;
+		}
+	}
+
+	#footer-widgets.mobile-4-col .footer-box {
+		width: 100% !important;
+
+		&:nth-child(5n) {
+			clear: left;
+		}
+	}
+}
+
+/*------------------------------------*
+	All Devices under 960px
+*------------------------------------*/
+@media only screen and (max-width: 959px) {
+			
+	/* margin footer columns */
+	#footer-widgets {
+		.col {
+			margin-bottom: 30px;
+		}
+	}
+	
+}

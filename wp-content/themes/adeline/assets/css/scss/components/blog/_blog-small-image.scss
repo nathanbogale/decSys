@@ -1,0 +1,196 @@
+.blog-item.small-image {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+
+
+	.blog-item-inner {
+		@include display-flex();
+		@include flex-direction( row );
+		
+	}
+
+	.thumbnail,
+	.blog-item-content {
+		@include display-flex();
+		@include flex-direction( column );
+	}
+
+	.center {
+		.thumbnail,
+		.blog-item-content {
+			@include justify-content( center );
+		}
+	}
+
+	.bottom {
+		.thumbnail,
+		.blog-item-content {
+			@include justify-content( flex-end );
+		}
+	}
+
+	.thumbnail {
+		width: 50%;
+		min-width:50%;
+		flex:50%;
+
+		a {
+			position: relative;
+		}
+
+		.link-entry {
+			position: absolute;
+		    top: 0;
+		}
+
+	    .left-position .link-entry {
+		    right: 0;
+	    }
+
+	    .right-position .link-entry {
+		    left: 0;
+	    }
+	}
+
+	.blog-item-content {
+		width: 50%;
+	}
+
+	.blog-item-content {
+		padding: 6px 0;
+	}
+
+    .left-position .blog-item-content {
+    	padding-left: 3em;
+    }
+
+    .right-position .blog-item-content {
+    	padding-right: 3em;
+    }
+
+    .blog-item-category {
+    	display: block;
+	    font-size: 13px;
+	    font-weight: 500;
+	    letter-spacing: 0.6px;
+	    line-height: 1.2em;
+	    text-transform: uppercase;
+	    margin-bottom: 10px;
+
+	    a {
+	    	color: #a8aaac;
+
+	    	&:hover {
+	    		color: $color-2;
+	    	}
+	    }
+    }
+
+	.blog-item-summary {
+		margin: 15px 0;
+		font-size:1em;
+	}
+
+	.blog-item-bottom {
+		display: block;
+	    padding-top: 15px;
+	    font-size: 13px;
+	    font-weight: 500;
+	    letter-spacing: 0.6px;
+	    line-height: 1.2em;
+	    text-transform: uppercase;
+	}
+
+	.blog-item-comments,
+	.blog-item-comments a,
+	.blog-item-author,
+	.blog-item-author a,
+	.blog-item-date {
+		color: #888888;
+	}
+	.blog-item-author a:hover {
+		color: $color-2;
+	}
+	.blog-item-author i {
+		padding-right: 6px;
+	}
+	.blog-item-comments {
+		float: left;
+
+		i {
+			padding-right: 6px;
+		}
+
+		a:hover {
+			color: $color-2;
+		}
+	}
+
+	.blog-item-date, .blog-item-author {
+		float: right;
+	}
+
+	&.no-featured-image:not(.has-media) {
+		.blog-item-content {
+			width: 100%;
+		}
+
+		.left-position .blog-item-content {
+			padding-left: 0;
+		}
+
+		.right-position .blog-item-content {
+			padding-right: 0;
+		}	
+	}
+	&.entry-style-tiled {
+		.left-position {
+			.blog-item-content {
+				padding-right:30px;
+			}
+		}
+		.right-position {
+			.blog-item-content {
+				padding-left:30px;
+			}
+		}
+	&.no-featured-image:not(.has-media) {
+		.blog-item-content {
+			padding-left:30px;
+			padding-right:30px;
+		}
+		}
+		.blog-item-content {
+			padding-top:30px;
+			padding-bottom:30px;
+		}
+		
+	}
+
+
+}
+
+
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	.blog-item.small-image {
+		.blog-item-inner {
+			@include flex-direction( column );
+		}
+
+		.thumbnail,
+		.blog-item-content {
+			width: 100%;
+		}
+
+		.blog-item-content {
+			margin-top: 15px;
+    		padding: 0 !important;
+		}
+	}
+	
+}

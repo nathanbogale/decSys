@@ -1,0 +1,95 @@
+
+
+/*----------Client Style 1----------*/
+
+.avo-counter.style-1{
+	.item{
+		text-align: center;
+		position: relative;
+		z-index: 2;
+
+		&:after{
+			content: '';
+			width: 1px;
+			height: 100%;
+			
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			opacity: .05;
+		}
+
+		&.no-bord{
+
+			&:after{
+				display: none;
+			}
+		}
+
+		.icon{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			
+			width: 100%;
+			opacity: .05;
+			z-index: -1;
+			i::before{
+				font-size: 70px;
+			}
+		}
+
+		h3{
+			font-weight: 200;
+			letter-spacing: 2px;
+			margin-bottom: 15px;
+			font-size: 35px;
+		}
+
+		p{
+			
+			letter-spacing: 1px;
+		}
+	}
+}
+
+// Light Mode
+.avo-counter.style-1{
+	.item{
+		&:after{
+			background: #000;
+		}
+		p{
+			color: #000;
+		}
+	}
+
+} 
+
+// Dark Mode 
+body.avo-dark-mode .avo-counter.style-1{
+	.item{
+		&:after{
+			background: #fff;
+		}
+		p{
+			color: #fff;
+		}
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.avo-auto-mode .avo-counter.style-1{
+		.item{
+			&:after{
+				background: #fff;
+			}
+			p{
+				color: #fff;
+			}
+		}
+	}
+}
+

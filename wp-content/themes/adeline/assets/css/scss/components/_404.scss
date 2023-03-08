@@ -1,0 +1,56 @@
+.error404 .subheader {
+	display:none;
+}
+.error404 #main {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;         
+}
+.error404-content {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+    .error-title {
+        font-size: 250px;
+		line-height:250px;
+		font-weight:900;
+        margin: 0 0 25px;
+    }
+
+    .error-text {
+        font-size: 22px;
+        color: $color-11;
+        margin-bottom: 45px;
+    }
+
+    .searchform {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .error-btn {
+        margin-top: 60px;
+
+        &:hover {
+            color: $color-1;
+        }
+    }
+}
+
+/*------------------------------------*
+    Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+    .error404-content {
+        .searchform {
+            width: 100%;
+        }
+
+        .error-btn {
+            margin-top: 40px;
+        }
+    }
+    
+}

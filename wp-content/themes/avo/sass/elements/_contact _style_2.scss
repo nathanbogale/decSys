@@ -1,0 +1,30 @@
+
+/* ----------------------------------------------------------------
+			[ * Contact Style 02 ]
+-----------------------------------------------------------------*/
+.contact-style2{
+	form {
+		input{
+			border-radius: 50px;
+			padding: 8px 15px;
+			padding-left: 40px;
+		}
+	}
+	textarea{
+		border-radius: 15px;
+		padding-left: 40px;
+	}
+	span.your-name:before,span.your-email:before,span.subject:before,span.your-message:before{
+		left: 20px;
+	}
+	span.your-name,span.your-email,span.subject{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	span.subject{
+		margin-bottom: 0;
+	}
+	form input:focus{
+	    box-shadow: none;
+	};
+}

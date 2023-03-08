@@ -1,0 +1,558 @@
+$dpr-spinner-margin: 40px auto !default;
+$dpr-spinner-size: 60px !default;
+
+#dpr-loading{
+background-color: $color-1;
+height: 100%;
+width: 100%;
+position: fixed;
+z-index: 10000;
+margin-top: 0px;
+top: 0px;
+}
+
+#dpr-loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#dpr-loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 100%;
+	margin-top: -100px;
+	margin-left: -50%;
+}
+.dpr-loading-image-holder {
+text-align:center;
+}
+.dpr-loading-text-holder {
+text-align:center;
+font-size: 18px;
+color: #999;
+font-weight:700;
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-rotating-plane"></div>
+ *
+ */
+
+.dpr-spinner-rotating-plane {
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  background-color: $color-5;
+  margin: $dpr-spinner-margin;
+  animation: dpr-spinner-rotatePlane 1.2s infinite ease-in-out;
+}
+
+@keyframes dpr-spinner-rotatePlane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-double-bounce">
+        <div class="dpr-spinner-child dpr-spinner-double-bounce1"></div>
+        <div class="dpr-spinner-child dpr-spinner-double-bounce2"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-double-bounce {
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  position: relative;
+  margin: $dpr-spinner-margin;
+
+  .dpr-spinner-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: $color-5;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: dpr-spinner-doubleBounce 2.0s infinite ease-in-out;
+  }
+
+  .dpr-spinner-double-bounce2 {
+    animation-delay: -1.0s;
+  }
+}
+
+@keyframes dpr-spinner-doubleBounce {
+  0%, 100% { transform: scale(0) }
+  50% { transform: scale(1.0) }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-wave">
+        <div class="dpr-spinner-rect dpr-spinner-rect1"></div>
+        <div class="dpr-spinner-rect dpr-spinner-rect2"></div>
+        <div class="dpr-spinner-rect dpr-spinner-rect3"></div>
+        <div class="dpr-spinner-rect dpr-spinner-rect4"></div>
+        <div class="dpr-spinner-rect dpr-spinner-rect5"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-wave {
+  $rectCount: 5;
+  $animationDuration: 1.2s;
+  $delayRange: 0.4s;
+
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size * 1.25;
+  height: $dpr-spinner-size;
+  text-align: center;
+  font-size: 10px;
+
+  .dpr-spinner-rect {
+    background-color: $color-5;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    animation: dpr-spinner-waveStretchDelay $animationDuration infinite ease-in-out;
+  }
+
+  @for $i from 1 through $rectCount {
+    .dpr-spinner-rect#{$i} { animation-delay: - $animationDuration + $delayRange / ($rectCount - 1) * ($i - 1); }
+  }
+}
+
+@keyframes dpr-spinner-waveStretchDelay {
+  0%, 40%, 100% { transform: scaleY(0.4) }
+  20% { transform: scaleY(1.0) }
+}
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-wandering-cubes">
+        <div class="dpr-spinner-cube dpr-spinner-cube1"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube2"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-wandering-cubes {
+  $animationDuration: 1.8s;
+
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  position: relative;
+
+  .dpr-spinner-cube {
+    background-color: $color-5;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: dpr-spinner-wanderingCube $animationDuration ease-in-out #{-$animationDuration} infinite both;
+  }
+
+  .dpr-spinner-cube2 {
+    animation-delay: -$animationDuration / 2;
+  }
+}
+
+@keyframes dpr-spinner-wanderingCube {
+  $cubeDistance: 30px;
+  0% {
+    transform: rotate(0deg);
+  } 25% {
+    transform: translateX($cubeDistance) rotate(-90deg) scale(0.5);
+  } 50% {
+    /* Hack to make FF rotate in the right direction */
+    transform: translateX($cubeDistance) translateY($cubeDistance) rotate(-179deg);
+  } 50.1% {
+    transform: translateX($cubeDistance) translateY($cubeDistance) rotate(-180deg);
+  } 75% {
+    transform: translateX(0) translateY($cubeDistance) rotate(-270deg) scale(0.5);
+  } 100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-spinner dpr-spinner-pulse"></div>
+ *
+ */
+
+.dpr-spinner-pulse {
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  margin: $dpr-spinner-margin;
+  background-color: $color-5;
+  border-radius: 100%;
+  animation: dpr-spinner-pulseScaleOut 1.0s infinite ease-in-out;
+}
+
+@keyframes dpr-spinner-pulseScaleOut {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-chasing-dots">
+        <div class="dpr-spinner-child dpr-spinner-dot1"></div>
+        <div class="dpr-spinner-child dpr-spinner-dot2"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-chasing-dots {
+  $animationDuration: 2.0s;
+
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  position: relative;
+  text-align: center;
+  animation: dpr-spinner-chasingDotsRotate $animationDuration infinite linear;
+
+  .dpr-spinner-child {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: $color-5;
+    border-radius: 100%;
+    animation: dpr-spinner-chasingDotsBounce $animationDuration infinite ease-in-out;
+  }
+
+  .dpr-spinner-dot2 {
+    top: auto;
+    bottom: 0;
+    animation-delay: - $animationDuration/2;
+  }
+}
+
+@keyframes dpr-spinner-chasingDotsRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dpr-spinner-chasingDotsBounce {
+  0%, 100% {
+    transform: scale(0);
+  } 50% {
+    transform: scale(1.0);
+  }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-three-bounce">
+        <div class="dpr-spinner-child dpr-spinner-bounce1"></div>
+        <div class="dpr-spinner-child dpr-spinner-bounce2"></div>
+        <div class="dpr-spinner-child dpr-spinner-bounce3"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-three-bounce {
+  $animationDuration: 1.4s;
+  $delayRange: 0.32s;
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size * 2;
+  text-align: center;
+
+  .dpr-spinner-child {
+    width: $dpr-spinner-size / 2;
+    height: $dpr-spinner-size / 2;
+    background-color: $color-5;
+
+    border-radius: 100%;
+    display: inline-block;
+    animation: dpr-spinner-three-bounce $animationDuration ease-in-out 0s infinite both;
+  }
+
+  .dpr-spinner-bounce1 { animation-delay: -$delayRange; }
+  .dpr-spinner-bounce2 { animation-delay: -$delayRange / 2; }
+}
+
+@keyframes dpr-spinner-three-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1.0);
+  }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-circle">
+        <div class="dpr-spinner-circle1 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle2 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle3 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle4 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle5 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle6 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle7 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle8 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle9 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle10 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle11 dpr-spinner-child"></div>
+        <div class="dpr-spinner-circle12 dpr-spinner-child"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-circle {
+  $circleCount: 12;
+  $animationDuration: 1.2s;
+
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  position: relative;
+
+  .dpr-spinner-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .dpr-spinner-child:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: $color-5;
+    border-radius: 100%;
+    animation: dpr-spinner-circleBounceDelay $animationDuration infinite ease-in-out both;
+  }
+
+
+  @for $i from 2 through $circleCount {
+    .dpr-spinner-circle#{$i} { transform: rotate(360deg / $circleCount * ($i - 1)); }
+  }
+
+  @for $i from 2 through $circleCount {
+    .dpr-spinner-circle#{$i}:before { animation-delay: - $animationDuration + $animationDuration / $circleCount * ($i - 1); }
+  }
+}
+
+@keyframes dpr-spinner-circleBounceDelay {
+  0%, 80%, 100% { transform: scale(0) }
+  40% { transform: scale(1.0) }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-cube-grid">
+        <div class="dpr-spinner-cube dpr-spinner-cube1"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube2"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube3"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube4"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube5"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube6"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube7"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube8"></div>
+        <div class="dpr-spinner-cube dpr-spinner-cube9"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-cube-grid {
+  $delayRange: 0.4s;
+
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  margin: $dpr-spinner-margin;
+
+  .dpr-spinner-cube {
+    width: 33.33%;
+    height: 33.33%;
+    background-color: $color-5;
+    float: left;
+    animation: dpr-spinner-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  }
+
+  /*
+   * Spinner positions
+   * 1 2 3
+   * 4 5 6
+   * 7 8 9
+   */
+
+  .dpr-spinner-cube1 { animation-delay: $delayRange * 0.50 }
+  .dpr-spinner-cube2 { animation-delay: $delayRange * 0.75 }
+  .dpr-spinner-cube3 { animation-delay: $delayRange }
+  .dpr-spinner-cube4 { animation-delay: $delayRange * 0.25 }
+  .dpr-spinner-cube5 { animation-delay: $delayRange * 0.50 }
+  .dpr-spinner-cube6 { animation-delay: $delayRange * 0.75 }
+  .dpr-spinner-cube7 { animation-delay: 0.0s }
+  .dpr-spinner-cube8 { animation-delay: $delayRange * 0.25 }
+  .dpr-spinner-cube9 { animation-delay: $delayRange * 0.50 }
+}
+
+@keyframes dpr-spinner-cubeGridScaleDelay {
+  0%, 70%, 100% { transform:scale3D(1.0, 1.0, 1.0) }
+  35%           { transform:scale3D(0.0, 0.0, 1.0) }
+}
+
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-fading-circle">
+        <div class="dpr-spinner-circle1 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle2 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle3 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle4 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle5 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle6 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle7 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle8 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle9 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle10 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle11 dpr-spinner-circle"></div>
+        <div class="dpr-spinner-circle12 dpr-spinner-circle"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-fading-circle {
+  $circleCount: 12;
+  $animationDuration: 1.2s;
+
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  position: relative;
+
+  .dpr-spinner-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .dpr-spinner-circle:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: $color-5;
+    border-radius: 100%;
+    animation: dpr-spinner-circleFadeDelay $animationDuration infinite ease-in-out both;
+  }
+
+  @for $i from 2 through $circleCount {
+    .dpr-spinner-circle#{$i} { transform: rotate(360deg / $circleCount * ($i - 1)); }
+  }
+
+  @for $i from 2 through $circleCount {
+    .dpr-spinner-circle#{$i}:before { animation-delay: - $animationDuration + $animationDuration / $circleCount * ($i - 1); }
+  }
+
+}
+
+@keyframes dpr-spinner-circleFadeDelay {
+  0%, 39%, 100% { opacity: 0 }
+  40% { opacity: 1 }
+}
+/*
+ *  Usage:
+ *
+      <div class="dpr-spinner-folding-cube">
+        <div class="dpr-spinner-cube1 dpr-spinner-cube"></div>
+        <div class="dpr-spinner-cube2 dpr-spinner-cube"></div>
+        <div class="dpr-spinner-cube4 dpr-spinner-cube"></div>
+        <div class="dpr-spinner-cube3 dpr-spinner-cube"></div>
+      </div>
+ *
+ */
+
+.dpr-spinner-folding-cube {
+  $cubeCount: 4;
+  $animationDuration: 2.4s;
+  $delayRange: $animationDuration/2;
+
+  margin: $dpr-spinner-margin;
+  width: $dpr-spinner-size;
+  height: $dpr-spinner-size;
+  position: relative;
+  transform: rotateZ(45deg);
+
+  .dpr-spinner-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+  }
+
+  .dpr-spinner-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-5;
+    animation: dpr-spinner-foldCubeAngle $animationDuration infinite linear both;
+    transform-origin: 100% 100%;
+  }
+
+  // Rotation / angle
+  @for $i from 2 through $cubeCount {
+    .dpr-spinner-cube#{$i} {
+      transform: scale(1.1) rotateZ(90deg * ($i - 1));
+    }
+  }
+
+  @for $i from 2 through $cubeCount {
+    .dpr-spinner-cube#{$i}:before {
+      animation-delay: $delayRange / $cubeCount * ($i - 1);
+    }
+  }
+}
+
+@keyframes dpr-spinner-foldCubeAngle {
+  0%, 10% {
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}

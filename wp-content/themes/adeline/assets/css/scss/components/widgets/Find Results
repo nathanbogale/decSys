@@ -1,0 +1,10 @@
+Searching 147 files for "Open Sans" (case sensitive)
+
+/Applications/XAMPP/xamppfiles/htdocs/adeline_main/wp-content/themes/adeline/assets/css/scss/_config.scss:
+    9  
+   10  // Body type
+   11: $body-font-family:     'Roboto', sans-serif !default;
+   12  $body-font-weight:     300 !default;
+   13  $body-font-style:      normal !default;
+
+1 match in 1 file

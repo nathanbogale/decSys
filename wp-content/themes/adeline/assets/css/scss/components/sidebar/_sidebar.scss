@@ -1,0 +1,144 @@
+.sidebar-box {
+	margin-bottom: 40px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul li {
+	word-wrap:break-word;
+	}
+	ul li ul {
+	padding-left:10px;
+	}
+	
+}
+
+.widget-title {
+    display: block;
+    line-height: 1.2;
+    font-size: 21px;
+    font-weight: 700;
+    color: $color-2;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+	position:relative;
+}
+.widget-title a.rsswidget {
+	font-weight: 700;
+    color: $color-2;
+}
+.widget-title-decoration-bordered .sidebar-container .widget-title {
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    border-color: $color-5;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+
+.widget-title-decoration-underlined .sidebar-container .widget-title:before {
+		content:'';
+		display:block;
+		position:absolute;
+		bottom:-12px;
+		width: 100%;
+		border-bottom: 1px solid #e5e5e9;
+}
+.widget-title-decoration-underlined .sidebar-container .widget-title:after {
+		content:'';
+		display:block;
+		position:absolute;
+		bottom:-12px;
+		width: 50px;
+		border-bottom: 1px solid $color-5;
+}
+.widget-title-decoration-underlined .sidebar-container .widget-title {
+margin-bottom:35px;
+}
+.sidebar-container a {
+	color:$color-4;
+	font-weight:400;
+	&:hover {
+	color:$color-5;
+	}
+}
+/**
+* Nav menu widget 
+*/
+
+aside .widget_nav_menu li, aside .widget_pages li {
+line-height:30px;
+}
+
+/**
+* Tag cloud 
+*/
+.widget-area {
+	.tagcloud a {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 6px;
+		margin-bottom: 9px;
+		padding: 3px 12px 3px 12px;
+		background-color: $color-8;
+		border: 1px $color-8 solid;
+		border-radius: 5px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		font-size: 14px !important;
+		font-weight:400;
+		color: $color-6;
+		line-height: 24px;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		
+		&:hover {
+		background-color:$color-5;
+		border-color:$color-5;
+		color:#fff
+		}
+	}
+}
+
+
+/**
+ * Widgets > Borders
+ */
+.dpr-adeline-widget-recent-posts li,
+.widget_categories li,
+.widget_recent_entries li,
+.widget_archive li,
+.widget_recent_comments li,
+.widget_layered_nav li,
+.widget-recent-posts-icons li,
+.dpr-footer .widget_nav_menu li {
+	padding: 6px 0;
+	line-height:1.35em;
+}
+.dpr-footer .widget_nav_menu li {
+	padding: 0;
+}
+.dpr-footer .widget_nav_menu li a{
+	border-bottom:1px dotted rgba(255, 255, 255, 0.15);
+	display:block;
+	padding:9px 0 9px 0;
+	width:100%;
+}
+.dpr-footer .widget_nav_menu ul li:last-child a{
+	border: none;
+}
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	#main .widget_nav_menu li a:before {
+		display: none;
+	}
+	
+}
+

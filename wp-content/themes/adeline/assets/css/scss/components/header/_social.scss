@@ -1,0 +1,285 @@
+.dpr-adeline-social-menu {
+	float: right;
+    position: relative;
+    z-index: 10;
+}
+.dpr-adeline-social-menu, .dpr-adeline-social-block {
+
+    &.minimal-social {
+		right: -8px;
+	}
+
+	&.social-styled {
+		right: -2px;
+	}
+
+    .social-menu-inner {
+    	@include display-flex();
+		@include align-items( center );
+    	height: 74px;
+    }
+
+    ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+
+	    li {
+	    	float: left;
+    		position: relative;
+
+    		a {
+    			display: inline-block;
+			    background-color: transparent;
+			    color: $color-4;
+				font-size: 12px;
+			    padding: 0 4px;
+				margin: 2px;
+			    line-height: 1;
+			    text-align: center;
+			    letter-spacing: 0;
+
+			    span {
+				display:block;
+			    	width: 1em;
+   					height: 1em;
+			    	text-align: center;
+			    }
+
+			    &:hover {
+			    	background-color: transparent;
+			    }
+    		}
+
+    		&:first-child a {
+    			margin-left: 0;
+    		}
+
+    		&:last-child a {
+    			margin-right: 0;
+    		}
+
+		    &.dpr-adeline-twitter a:hover { color: #46d4fe !important; }
+		    &.dpr-adeline-facebook a:hover { color: #37589b !important; }
+		    &.dpr-adeline-google-plus a:hover { color: #de5a49 !important; }
+		    &.dpr-adeline-pinterest-p a:hover { color: #cb2027 !important; }
+		    &.dpr-adeline-dribbble a:hover { color: #ea4c89 !important; }
+		    &.dpr-adeline-vk a:hover { color: #597BA5 !important; }
+		    &.dpr-adeline-instagram a:hover { color: #D43085 !important; }
+		    &.dpr-adeline-linkedin a:hover { color: #3399CC !important; }
+		    &.dpr-adeline-tumblr a:hover { color: #2C4762 !important; }
+		    &.dpr-adeline-github-alt a:hover { color: #60b044 !important; }
+		    &.dpr-adeline-flickr a:hover { color: #fa4086 !important; }
+		    &.dpr-adeline-skype a:hover { color: #00AFF0 !important; }
+		    &.dpr-adeline-youtube a:hover { color: #C4302B !important; }
+		    &.dpr-adeline-vimeo a:hover { color: #1ab7ea !important; }
+		    &.dpr-adeline-vine a:hover { color: #00bf8f !important; }
+		    &.dpr-adeline-xing a:hover { color: #006464 !important; }
+		    &.dpr-adeline-yelp a:hover { color: #C41200 !important; }
+		    &.dpr-adeline-tripadvisor a:hover { color: #589442 !important; }
+		    &.dpr-adeline-odnoklassniki a:hover { color: #ed812b !important; }
+		    &.dpr-adeline-rss a:hover { color: #ff7900 !important; }
+		    &.dpr-adeline-envelope-o a:hover { color: $color-5 !important; }
+			&.dpr-adeline-viadeo a:hover {color:#EE7355 !important; }
+			&.dpr-adeline-stumbleupon a:hover {color:#E94825 !important; }
+			&.dpr-adeline-digg a:hover {color:#000000 !important; }
+			&.dpr-adeline-lastfm a:hover {color:#C11F24 !important; }
+			&.dpr-adeline-soundcloud a:hover {color:#F95110 !important; }
+			&.dpr-adeline-delicious a:hover {color:#0076E8 !important; }
+
+	    }
+	}
+	
+
+	.colored ul li {
+		a {
+	    	position: relative;
+		    display: inline-block;
+		    color: $color-1 !important;
+		    line-height: 1;
+    		padding: 1em;
+		    @include border-radius( 50% );
+		    vertical-align: middle;
+		    @include transition( all .3s ease-out );
+
+		    &:hover {
+		    	color: $color-1 !important;
+		    }
+		}
+
+	    &.dpr-adeline-twitter a { background-color: #46d4fe; }
+	    &.dpr-adeline-twitter a:hover { background-color: darken(#46d4fe,10%); }
+	    &.dpr-adeline-facebook a{ background-color: #37589b; }
+	    &.dpr-adeline-facebook a:hover{ background-color: darken(#37589b,10%); }
+	    &.dpr-adeline-google-plus a{ background-color: #de5a49; }
+	    &.dpr-adeline-google-plus a:hover { background-color: darken(#de5a49,10%); }
+	    &.dpr-adeline-pinterest-p a { background-color: #cb2027; }
+	    &.dpr-adeline-pinterest-p a:hover { background-color: darken(#cb2027,10%); }
+	    &.dpr-adeline-dribbble a { background-color: #ea4c89; }
+	    &.dpr-adeline-dribbble a:hover { background-color: darken(#ea4c89,10%); }
+	    &.dpr-adeline-vk a { background-color: #597BA5; }
+	    &.dpr-adeline-vk a:hover { background-color: darken(#597BA5,10%); }
+	    &.dpr-adeline-instagram a { background-color: #D43085; }
+	    &.dpr-adeline-instagram a:hover { background-color: darken(#D43085,10%); }
+	    &.dpr-adeline-linkedin a{ background-color: #3399CC; }
+	    &.dpr-adeline-linkedin a:hover { background-color: darken(#3399CC,10%); }
+	    &.dpr-adeline-tumblr a { background-color: #2C4762; }
+	    &.dpr-adeline-tumblr a:hover { background-color: darken(#2C4762,10%); }
+	    &.dpr-adeline-github-alt a { background-color: #60b044; }
+	    &.dpr-adeline-github-alt a:hover { background-color: darken(#60b044,10%); }
+	    &.dpr-adeline-flickr a { background-color: #fa4086; }
+	    &.dpr-adeline-flickr a:hover { background-color: darken(#fa4086,10%); }
+	    &.dpr-adeline-skype a { background-color: #00AFF0; }
+	    &.dpr-adeline-skype a:hover { background-color: darken(#00AFF0,10%); }
+	    &.dpr-adeline-youtube a { background-color: #C4302B; }
+	    &.dpr-adeline-youtube a:hover { background-color: darken(#46d4fe,10%); }
+	    &.dpr-adeline-vimeo a { background-color: #1ab7ea; }
+	    &.dpr-adeline-vimeo a:hover { background-color: darken(#1ab7ea,10%); }
+	    &.dpr-adeline-vine a { background-color: #00bf8f; }
+	    &.dpr-adeline-vine a:hover { background-color: darken(#00bf8f,10%); }
+	    &.dpr-adeline-xing a { background-color: #006464; }
+	    &.dpr-adeline-xing a:hover { background-color: darken(#006464,10%); }
+	    &.dpr-adeline-yelp a { background-color: #C41200; }
+	    &.dpr-adeline-yelp a:hover { background-color: darken(#C41200,10%); }
+	    &.dpr-adeline-tripadvisor a { background-color: #589442; }
+	    &.dpr-adeline-tripadvisor a:hover { background-color: darken(#589442,10%); }
+	    &.dpr-adeline-odnoklassniki a { background-color: #ed812b; }
+	    &.dpr-adeline-odnoklassniki a:hover { background-color: darken(#ed812b,10%); }
+	    &.dpr-adeline-rss a { background-color: #ff7900; }
+	    &.dpr-adeline-rss a:hover { background-color: darken( #ff7900,10%); }
+	    &.dpr-adeline-envelope-o a { background-color: $color-5; }
+	    &.dpr-adeline-envelope-o a:hover { background-color: darken($color-5,10%); }
+		&.dpr-adeline-viadeo a {background-color:#EE7355;}
+		&.dpr-adeline-viadeo a:hover {background-color:darken(#EE7355,10%);	}
+		&.dpr-adeline-stumbleupon a {background-color:#E94825; }
+		&.dpr-adeline-stumbleupon a:hover {background-color:darken(#E94825,10%); }
+		&.dpr-adeline-digg a {background-color:#000000; }
+		&.dpr-adeline-digg a:hover {background-color:lighten(#000000,20%); }
+		&.dpr-adeline-lastfm a {background-color:#C11F24; }
+		&.dpr-adeline-lastfm a:hover {background-color:darken(#C11F24,10%); }
+		&.dpr-adeline-soundcloud a {background-color:#F95110; }
+		&.dpr-adeline-soundcloud a:hover {background-color:darken(#F95110,10%); }
+		&.dpr-adeline-delicious a {background-color:#0076E8; }
+		&.dpr-adeline-delicious a:hover {background-color:darken(#0076E8,10%); }
+		&.side-panel-li a {background-color:$color-15; }
+		&.side-panel-li a:hover {background-color:darken($color-15,10%); }
+		}
+	
+	.outlined ul li {
+		a {
+	    	position: relative;
+		    display: inline-block;
+		    background-color: transparent;
+		    color: $color-3;
+		    border: 1px solid $color-3;
+		    line-height: 1;
+    		padding: 1em;
+		    @include border-radius( 50% );
+		    vertical-align: middle;
+		    @include transition( all .3s ease-out );
+
+		    &:hover {
+		    	background-color: transparent;
+		    }
+		}
+
+	    &.dpr-adeline-twitter a:hover { color: #46d4fe; border-color: #46d4fe; }
+	    &.dpr-adeline-facebook a:hover { color: #37589b; border-color: #37589b; }
+	    &.dpr-adeline-google-plus a:hover { color: #de5a49; border-color: #de5a49; }
+	    &.dpr-adeline-pinterest-p a:hover { color: #cb2027; border-color: #cb2027; }
+	    &.dpr-adeline-dribbble a:hover { color: #ea4c89; border-color: #ea4c89; }
+	    &.dpr-adeline-vk a:hover { color: #597BA5; border-color: #597BA5; }
+	    &.dpr-adeline-instagram a:hover { color: #D43085; border-color: #D43085; }
+	    &.dpr-adeline-linkedin a:hover { color: #3399CC; border-color: #3399CC; }
+	    &.dpr-adeline-tumblr a:hover { color: #2C4762; border-color: #2C4762; }
+	    &.dpr-adeline-github-alt a:hover { color: #60b044; border-color: #60b044; }
+	    &.dpr-adeline-flickr a:hover { color: #fa4086; border-color: #fa4086; }
+	    &.dpr-adeline-skype a:hover { color: #00AFF0; border-color: #00AFF0; }
+	    &.dpr-adeline-youtube a:hover { color: #C4302B; border-color: #C4302B; }
+	    &.dpr-adeline-vimeo a:hover { color: #1ab7ea; border-color: #1ab7ea; }
+	    &.dpr-adeline-vine a:hover { color: #00bf8f; border-color: #00bf8f; }
+	    &.dpr-adeline-xing a:hover { color: #006464; border-color: #006464; }
+	    &.dpr-adeline-yelp a:hover { color: #C41200; border-color: #C41200; }
+	    &.dpr-adeline-tripadvisor a:hover { color: #589442; border-color: #589442; }
+	    &.dpr-adeline-odnoklassniki a:hover { color: #ed812b; border-color: #ed812b; }
+	    	    &.dpr-adeline-rss a:hover { color: #ff7900; border-color: #ff7900; }
+	    &.dpr-adeline-envelope-o a:hover { color: $color-5; border-color: $color-5; }
+		&.dpr-adeline-viadeo a:hover {color:#EE7355; border-color:#EE7355 ;	}
+		&.dpr-adeline-stumbleupon a:hover {color:#EE7355; border-color:#E94825 ;}
+		&.dpr-adeline-digg a:hover {color:#000000; border-color:#000000 ;}
+		&.dpr-adeline-lastfm a:hover {color:#C11F24; border-color:#C11F24 ;}
+		&.dpr-adeline-soundcloud a:hover {color:#F95110; border-color:#F95110 ;}
+		&.dpr-adeline-delicious a:hover {color:#0076E8; border-color:#0076E8 ;}
+	}
+	
+	.rounded ul li a {
+    	position: relative;
+	    display: inline-block;
+	    background-color: $color-2;
+	    color: $color-1;
+	    line-height: 1;
+		padding: 1em;
+	    @include border-radius( 50% );
+	    vertical-align: middle;
+	    @include transition( all .3s ease-out );
+
+	    &:hover {
+	    	background-color: $color-5;
+	    	color: $color-1 !important;
+	    }
+	}
+	.rounded.on-dark-bg ul li a {
+	    background-color: rgba(255,255,255,0.1);
+
+	    &:hover {
+	    	background-color: rgba(255,255,255,0.2);
+	    	color: $color-1 !important;
+	    }
+	}
+}
+.dpr-adeline-social-menu.minimal-social ul li a {
+		font-size:125%;
+}
+
+.social-menu-inner .minimal-social.on-dark-bg ul li {
+		
+			&.dpr-adeline-twitter a:hover { color: lighten(#46d4fe,20%) !important; }
+		    &.dpr-adeline-facebook a:hover { color: lighten(#37589b,20%) !important; }
+		    &.dpr-adeline-google-plus a:hover { color: lighten(#de5a49,20%) !important; }
+		    &.dpr-adeline-pinterest-p a:hover { color: lighten(#cb2027,20%) !important; }
+		    &.dpr-adeline-dribbble a:hover { color: lighten(#ea4c89,20%) !important; }
+		    &.dpr-adeline-vk a:hover { color: lighten(#597BA5,20%) !important; }
+		    &.dpr-adeline-instagram a:hover { color: lighten(#D43085,20%) !important; }
+		    &.dpr-adeline-linkedin a:hover { color: lighten(#3399CC,20%) !important; }
+		    &.dpr-adeline-tumblr a:hover { color: lighten(#2C4762,20%) !important; }
+		    &.dpr-adeline-github-alt a:hover { color: lighten(#60b044,20%) !important; }
+		    &.dpr-adeline-flickr a:hover { color: lighten(#fa4086,20%) !important; }
+		    &.dpr-adeline-skype a:hover { color: lighten(#00AFF0,20%) !important; }
+		    &.dpr-adeline-youtube a:hover { color: lighten(#C4302B,20%) !important; }
+		    &.dpr-adeline-vimeo a:hover { color: lighten(#1ab7ea,20%) !important; }
+		    &.dpr-adeline-vine a:hover { color: lighten(#00bf8f,20%) !important; }
+		    &.dpr-adeline-xing a:hover { color: lighten(#006464,20%) !important; }
+		    &.dpr-adeline-yelp a:hover { color: lighten(#C41200,20%) !important; }
+		    &.dpr-adeline-tripadvisor a:hover { color: lighten(#589442,20%) !important; }
+		    &.dpr-adeline-odnoklassniki a:hover { color: lighten(#ed812b,20%) !important; }		    
+		    &.dpr-adeline-rss a:hover { color: lighten(#ff7900,20%) !important; }
+		    &.dpr-adeline-envelope-o a:hover { color: lighten($color-5,20%) !important; }
+			&.dpr-adeline-viadeo a:hover {color: lighten(#EE7355,20%) !important; }
+			&.dpr-adeline-stumbleupon a:hover {color: lighten(#E94825,20%) !important; }
+			&.dpr-adeline-digg a:hover {color: lighten(#000000,20%) !important; }
+			&.dpr-adeline-lastfm a:hover {color: lighten(#C11F24,20%) !important; }
+			&.dpr-adeline-soundcloud a:hover {color: lighten(#F95110,20%) !important; }
+			&.dpr-adeline-delicious a:hover {color: lighten(#0076E8,20%) !important; }
+}
+
+.social-menu-inner.outlined.on-dark-bg ul li {
+		a {
+		    color: rgba(255,255,255,0.5) !important;
+		    border-color: rgba(255,255,255,0.25);
+		}
+		a:hover {
+		    color: rgba(255,255,255,0.8) !important;
+		    border-color: rgba(255,255,255,0.5)!important;
+		}
+
+	}

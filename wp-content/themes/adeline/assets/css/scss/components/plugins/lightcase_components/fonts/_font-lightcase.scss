@@ -1,0 +1,55 @@
+$lightcase-font-path: "../fonts/lightcase/" !default;
+
+@function lightcase-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($lightcase-font-path + $url);
+    }
+}
+
+
+@font-face {
+  font-family: 'lightcase';
+  src:  icomoon-font-url('dpr-icomoon.eot');
+  src:  icomoon-font-url('dpr-icomoon.eot#iefix') format('embedded-opentype'), icomoon-font-url('dpr-icomoon.ttf') format('truetype'), icomoon-font-url('dpr-icomoon.woff') format('woff'), icomoon-font-url('dpr-icomoon.svg#dpr-icomoon') format('svg');
+
+  src: lightcase-font-url('lightcase.eot');
+  src: lightcase-font-url('lightcase.eot?55356177#iefix') format('embedded-opentype'),
+       lightcase-font-url('lightcase.woff?55356177') format('woff'),
+       lightcase-font-url('lightcase.ttf?55356177') format('truetype'),
+       lightcase-font-url('lightcase.svg?55356177#lightcase') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='lightcase-icon-']:before {
+  font-family: 'lightcase', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* Codes */
+.lightcase-icon-play:before { content: '\e800'; }
+.lightcase-icon-pause:before { content: '\e801'; }
+.lightcase-icon-close:before { content: '\e802'; }
+.lightcase-icon-prev:before { content: '\e803'; }
+.lightcase-icon-next:before { content: '\e804'; }
+.lightcase-icon-spin:before { content: '\e805'; }

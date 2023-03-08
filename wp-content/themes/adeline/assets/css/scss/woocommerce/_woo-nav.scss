@@ -1,0 +1,69 @@
+/*------------------------------------------------------------------
+Woo Product Navigation
+-------------------------------------------------------------------*/
+@media (min-width: 1080px) {
+	.dpr-product-nav-wrap {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	}
+}
+
+.dpr-product-nav-wrap {
+    text-align: right;
+    z-index: 1;
+}
+
+.dpr-product-nav {
+	position: relative;
+	display: inline-block;
+
+    li {
+		display: inline-block;
+		margin-left: 3px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		a.dpr-nav-link {
+			display: inline-block;
+			width:24px;
+			height:24px;
+			line-height: 24px;
+			border: 1px solid $color-10;
+			@include border-radius( 50% );
+			text-align: center;
+
+			i {
+				line-height: 1.2;
+			}
+
+			&:hover {
+				background-color: $color-5;
+				color: #fff;
+				border-color: $color-5;
+			}
+		}
+
+		.dpr-nav-thumb {
+			position: absolute;
+			top: 100%;
+			margin-top:5px;
+		    left: -99999px;
+		    display: inline-block;
+		    width: 90px;
+		    opacity: 0;
+		    @include transition( opacity 0.25s ease-in-out );
+		    @include box-shadow( 1px 1px 15px rgba(0,0,0,0.15) );
+		    z-index: 100;
+		}
+
+		&:hover > .dpr-nav-thumb {
+			opacity: 1;
+		    left: 50%;
+		    -webkit-transform: translateX(-50%);
+		    transform: translateX(-50%);
+		}
+    }
+}

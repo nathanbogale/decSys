@@ -1,0 +1,64 @@
+/**
+ * Recent Comments Widget
+ */
+.dpr-recent-comments {
+	li {
+		position: relative;
+		line-height: 1.6;
+		margin-top: 12px;
+		padding-top: 12px;
+
+		&:first-child {
+			margin-top: 0;
+			padding-top: 0;
+			border: 0;
+		}
+	}
+
+	.recent-comments-avatar {
+		display:inline-block;
+		position: relative;
+		margin-right: 4%;
+		float:left;
+		border-radius:50%;
+		overflow:hidden;
+
+
+	}
+
+	.recent-comments-details {
+		display:block;
+	}
+
+	.recent-comments-author {
+		font-weight: 500;
+	}
+
+	.recent-comments-info {
+		display: block;
+		margin-top: 6px;
+		font-size: 12px;
+		line-height: 1;
+		letter-spacing: 0.2px;
+
+		.sep {
+			padding: 0 2px;
+			opacity:.4;
+		}
+	}
+
+	.recent-comments-title,
+	.recent-comments-author {
+		
+	}
+	.recent-comments-title, .recent-comments-title a {
+		word-wrap: wrap;
+  		word-break: break-all;
+	}
+	.recent-comments-excerpt a {
+		color:inherit !important;
+		font-weight:300;
+		line-height:1.5em;
+	}
+
+}

@@ -1,0 +1,352 @@
+.container {
+	width: 1200px;
+	max-width: 90%;
+    margin: 0 auto;
+}
+
+#dpr-inner-wrapper {
+	position: relative;
+}
+
+#main {
+	position: relative;
+
+    #dpr-content-wrapper {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.no-margins #main #dpr-content-wrapper,
+.landing-page #main #dpr-content-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.content-area {
+	float: left;
+	position: relative;
+	width: 72%;
+	padding-right: 30px;
+}
+
+.widget-area {
+	width: 28%;
+
+	&.sidebar-primary {
+		float: right;
+		padding-left: 30px;
+	}
+
+	&.sidebar-secondary {
+		float: left;
+	}
+}
+
+.content-full-width .content-area,
+body.content-full-screen #dpr-content-wrapper {
+	width: 100% !important;
+	max-width: none !important;
+	padding: 0 !important;
+}
+
+.content-full-screen .content-area {
+	float: none;
+	width: 100% !important;
+	max-width: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.content-left-sidebar {
+	.content-area {
+		float: right;
+		padding-left: 30px;
+		padding-right: 0;
+	}
+
+	.widget-area {
+		float: left;
+		padding-right: 30px;
+		padding-left: 0;
+	}
+}
+
+.content-both-sidebars {
+	.content-area {
+		width: 44%;
+	}
+
+	&.order-scs {
+		.content-area {
+			left: 28%;
+			padding-left: 30px;
+		}
+
+		.widget-area.sidebar-secondary {
+			position: relative;
+			left: -44%;
+			padding-right: 30px;
+		}
+	}
+
+	&.order-ssc {
+		.content-area {
+			left: 56%;
+			padding-left: 30px;
+		    padding-right: 0;
+		}
+
+		.widget-area {
+			position: relative;
+			left: -44%;
+			padding-right: 30px;
+
+			&.sidebar-primary {
+			    padding-left: 0;
+			}
+		}
+	}
+
+	&.order-css {
+		.widget-area.sidebar-secondary {
+			padding-left: 30px;
+		}
+	}
+}
+
+/* Boxed Layout */
+.boxed-layout {
+	background-color: $color-7;
+
+	#dpr-inner-wrapper {
+		width: 1280px;
+		max-width: 100% ;
+		margin: 0 auto;
+		background-color: $color-1;
+	}
+
+
+	&.wrap-boxshadow #dpr-inner-wrapper {
+		@include box-shadow( 0 1px 4px rgba(0, 0, 0, .15) );
+	}
+
+	#dpr-inner-wrapper .container {
+		width: auto;
+		max-width: none;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	&.content-full-screen #dpr-content-wrapper {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	#footer-widgets {
+		margin: 0;
+	}
+}
+
+/* Boxed Layout > Move absolute items */
+.boxed-layout .dpr-adeline-breadcrumbs {
+	right: 30px;
+}
+
+
+/*------------------------------------*
+	All Devices under 1280px
+*------------------------------------*/
+@media only screen and (max-width: 1280px) {
+
+	/* Both sidebars layout */
+	.content-both-sidebars {
+		.content-area {
+			float: none !important;
+			width: 100% !important;
+			left: auto !important;
+		    padding: 0 !important;
+		    margin-bottom: 40px;
+	    }
+
+		.widget-area {
+			&.sidebar-primary,
+			&.sidebar-secondary {
+				float: left;
+				width: 49% !important;
+				left: auto !important;
+				padding: 0 !important;
+			}
+
+			&.sidebar-primary {
+				float: right;
+			}
+		}
+
+			&.sidebar-primary,
+			&.sidebar-secondary {
+				width: 48% !important;
+			}
+	}
+
+}
+
+/*------------------------------------*
+	All Devices under 1080px
+*------------------------------------*/
+@media only screen and (max-width: 1080px) {
+
+	/* Both sidebars layout */
+	.content-both-sidebars {
+		.content-area {
+			float: none !important;
+			width: 100% !important;
+			left: auto !important;
+		    padding: 0 !important;
+		    margin-bottom: 40px;
+	    }
+
+		.widget-area {
+			&.sidebar-primary,
+			&.sidebar-secondary {
+				float: left;
+				width: 49% !important;
+				left: auto !important;
+				padding: 0 !important;
+			}
+
+			&.sidebar-primary {
+				float: right;
+			}
+		}
+
+		.widget-area {
+			&.sidebar-primary,
+			&.sidebar-secondary {
+				width: 48% !important;
+			}
+		}
+	}
+
+}
+
+/*------------------------------------*
+	All Devices under 960px
+*------------------------------------*/
+@media only screen and (max-width: 959px) {
+	
+	/* boxed */
+	.boxed-layout {
+		#dpr-inner-wrapper {
+			overflow: hidden;
+		}
+
+		.dpr-adeline-breadcrumbs {
+			right: auto;
+		}
+	}
+	
+	/* container */
+	.container,
+	body.content-full-screen .elementor-section-wrapper > .elementor-section.elementor-section-boxed > .elementor-container {
+		max-width: 90%;
+	}
+	
+	/* full width content and sidebar */
+	.content-area,
+	.content-left-sidebar .content-area {
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+		padding: 0;
+	}
+
+	.no-margins .content-area,
+	.no-margins.content-left-sidebar .content-area {
+		margin-bottom: 0;
+	}
+
+	.widget-area,
+	.content-left-sidebar .widget-area {
+		float: none;
+		width: 100%;
+		padding: 0;
+		border: 0;
+	}
+
+	body.has-composer.has-sidebar #primary {
+		margin-bottom: 40px;
+	}
+
+	#main #dpr-content-wrapper.container {
+		width: auto !important;
+	}
+
+	/* Both sidebars layout */
+	.content-both-sidebars {
+		.widget-area {
+			&.sidebar-primary,
+			&.sidebar-secondary {
+				float: none !important;
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+/*------------------------------------*
+	Tablet Portrait
+*------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	/* main  */
+	body.boxed-layout #dpr-inner-wrapper,
+	body.boxed-layout .parallax-footer {
+		width: auto !important;
+	}
+	
+}
+
+/*------------------------------------*
+	Phone Portrait and Landscape
+*------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	/* grid & main  */
+	#dpr-inner-wrapper {
+		width: 100% !important;
+	}
+
+	body.boxed-layout #dpr-inner-wrapper {
+		width: auto !important;
+	}
+
+	.boxed-layout #dpr-top-bar-social {
+		&.dpr-top-bar-right {
+			right: auto;
+		}
+
+		&.dpr-top-bar-left {
+			left: auto;
+		}
+	}
+
+	.col, .blog-item {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	
+}
+
+/*------------------------------------*
+	Phone Landscape
+*------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+	/* boxed */
+	.boxed-layout #dpr-inner-wrapper .container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}

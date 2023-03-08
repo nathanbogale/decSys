@@ -1,0 +1,273 @@
+
+
+/*----------Button Style 1----------*/ 
+.button.style-1{
+	background: transparent;
+	padding: 12px 35px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+
+	&:focus{
+		outline: none;
+	}
+
+	&:hover{
+		outline: none;
+
+		&:after{
+			bottom: -30px;
+			transform: rotate(0deg);
+		}
+
+		span{
+			color: #fff;
+		}
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		top: -30px;
+		left: -30px;
+		right: -30px;
+		bottom: 130%;
+		background: #1e1e1e;
+		transform: rotate(-5deg);
+		transition: all .8s;
+	}
+
+	span{
+		font-size: 13px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		position: relative;
+		z-index: 2;
+		transition: all .8s;
+	}
+
+	&.btn-lit{
+
+		&:hover{
+
+			span{
+				color: $primary-color;
+			}
+		}
+	}
+
+	&.btn-blc{
+		background: #1e1e1e;
+
+		&:after{
+			background: #fff;
+		}
+
+		span{
+			color: #fff;
+		}
+
+		&:hover{
+	
+			span{
+				color: #1e1e1e;
+			}
+		}
+	}
+
+	&.btn-color{
+		background: $primary-color;
+		border-color: $primary-color;
+
+		&:after{
+			background: #fff;
+		}
+
+		span{
+			color: #0c0f16;
+		}
+
+		&:hover{
+	
+			span{
+				color: $primary-color;
+			}
+		}
+	}
+
+	&.btn-lg{
+		padding: 14px 40px;
+
+		span{
+			font-size: 14px;
+		}
+	}
+
+	&.btn-wit{
+		background: #fff;
+		border-color: #fff;
+
+		&:after{
+			background: #090909;
+		}
+
+		span{
+			color: #1e1e1e;
+		}
+
+		&:hover{
+	
+			span{
+				color: #fff;
+			}
+		}
+	}
+
+	&.btn-radius{
+		border-radius: 30px;
+	}
+}
+
+// Light Mode
+.button.style-1{
+	color: #000;
+	border: 2px solid #1e1e1e;
+	.btn-lit{
+		border-color: #0c0f16;
+		color: #0c0f16;
+
+	}
+	&:after{
+		background: #0c0f16;
+	}
+} 
+
+// Dark Mode 
+.avo-dark-mode .button.style-1{
+    color: #fff;
+    border: 2px solid #fff;
+	.btn-lit{
+		border-color: #fff;
+		color: #fff;
+	}
+	&:after{
+		background: #fff;
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	.avo-auto-mode .button.style-1{
+	    color: #fff;
+	    border: 2px solid #fff;
+		.btn-lit{
+			border-color: #fff;
+			color: #fff;
+		}
+	&:after{
+		background: #fff;
+	}
+	}
+}
+
+/*----------Button Style 2----------*/
+
+.button.style-2{
+
+	.vid-icon{
+
+		.vid{
+			width: 80px;
+			height: 80px;
+			background: #fff;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 80px;
+			position: relative;
+			display: inline-block;
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: -10px;
+				left: -10px;
+				right: -10px;
+				bottom: -10px;
+				background: #fff;
+				border-radius: 50%;
+				opacity: .1;
+			}
+			
+			span{
+				font-size: 30px;
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+/*----------Button Style 3----------*/
+
+.button.style-3{
+	.btn.purchase-theme{
+		margin-bottom: 60px;
+	    height: 60px;
+	    background: rgba(137,189,73,.25);
+	    border: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,.07);
+        border-radius: 30px;
+        display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+		i.icon{
+			height: 40px;
+		    width: 40px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    position: relative;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    background-color: #89bd49;
+		    -webkit-border-radius: 50%;
+		    border-radius: 50%;
+		    margin: 10px 0 10px 10px;
+		    -webkit-transition: all cubic-bezier(.4,0,.2,1) .4s;
+		    -o-transition: all cubic-bezier(.4,0,.2,1) .4s;
+		    transition: all cubic-bezier(.4,0,.2,1) .4s;
+			&:after {
+			    content: "";
+			    display: block;
+			    height: 60px;
+			    width: 60px;
+			    background: rgba(137,189,73,.3);
+			    z-index: -1;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;
+			    -webkit-transform: scale(1);
+			    -ms-transform: scale(1);
+			    transform: scale(1);
+			    -webkit-animation: 3s ease-in-out infinite pulse;
+			    animation: 3s ease-in-out infinite pulse;
+			}
+		}
+	}
+}
+
+
+

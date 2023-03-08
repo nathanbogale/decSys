@@ -1,0 +1,18 @@
+/*!
+ * Project   : DPR Adeline WordPress Theme
+ * Purpose   : WooCommerce Tweaks
+ * 
+ */
+
+// Configuration
+@import "config";
+
+// Mixins
+@import "mixins";
+@import "woocommerce/woocommerce-main";
+@import "woocommerce/woo-cart";
+@import "woocommerce/woo-cat-widget";
+@import "woocommerce/woo-mobile-cart";
+@import "woocommerce/woo-quantity";
+@import "woocommerce/woo-nav";
+@import "woocommerce/woo-responsive";

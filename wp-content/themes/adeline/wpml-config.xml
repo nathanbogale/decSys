@@ -1,0 +1,22 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_options_dpr_adeline">
+
+			<key name="adeline_footer_copyright_text" />
+			<key name="top_bar_content" />
+			<key name="mobile_menu_text" />
+			<key name="mobile_menu_close_text" />
+			<key name="mobile_menu_close_btn_text" />
+			<key name="menu_cart_custom_link" />
+			<key name="dpr_blog_infinite_scroll_last_text" />
+			<key name="dpr_blog_infinite_scroll_error_text" />
+			<key name="oss_social_share_heading" />
+			<key name="dpr_popup_title_text" />
+			<key name="dpr_popup_content" />
+			<key name="dpr_popup_continue_btn_text" />
+			<key name="dpr_popup_cart_btn_text" />
+			<key name="dpr_popup_bottom_text" />
+
+		</key>
+	</admin-texts>
+</wpml-config>

@@ -1,0 +1,162 @@
+/**
+ * Calendar Widget
+ */
+ 
+ .widget_calendar table {
+  position: relative;
+  text-align: center; 
+  }
+  .widget_calendar table td, .widget_calendar table th {
+    border: none;
+    padding: 0; 
+	text-align: center;	
+  }
+
+.widget_calendar caption {
+  background: $color-5;
+  color: #ffffff;
+  width: 100%;
+  height: 46px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle; 
+ }
+
+.widget_calendar tfoot {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 20px;
+  vertical-align: middle;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  }
+  .widget_calendar tfoot tr, .widget_calendar tfoot #prev, .widget_calendar tfoot #next {
+    display: block;
+    font-weight: bold;
+    font-size: 0px; 
+  }
+  .widget_calendar tfoot tr a, .widget_calendar tfoot #prev a, .widget_calendar tfoot #next a {
+      color: #ffffff !important; 
+  }
+  .widget_calendar tfoot tr a:hover, .widget_calendar tfoot #prev a:hover, .widget_calendar tfoot #next a:hover {
+        opacity: .6; 
+  }
+  .widget_calendar tfoot tr {
+    width: 100%; 
+  }
+  .widget_calendar tfoot td {
+    display: none; 
+  }
+  .widget_calendar tfoot #prev {
+    float: left; 
+  }
+  .widget_calendar tfoot #next {
+    float: right; 
+  }
+  .widget_calendar tfoot #prev a:after, .widget_calendar tfoot #next a:after {
+    content: '\e605';
+    font-family: "dpr-icomoon";
+    font-size: 16px; }
+  .widget_calendar tfoot #next a:after {
+    content: '\e606'; 
+  }
+
+.widget_calendar thead {
+  line-height: 44px; 
+ }
+  .widget_calendar thead tr th {
+    font-size: 13px; 
+}
+
+.widget_calendar tbody {
+  line-height: 44px; 
+}
+  .widget_calendar tbody tr td {
+    border: 1px solid $color-10;
+    text-align: center;
+    font-size: 14px; 
+}
+    .widget_calendar tbody tr td#today {
+      border-color: $color-5;
+      background-color: $color-5;
+      color: $color-1;
+      border-collapse: separate;
+      border-width: 1px;
+      display: block;
+      margin: -1px;
+      position: relative; 
+}
+    .widget_calendar tbody tr td a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: bold; 
+}
+.widget_calendar tbody tr td a:hover {
+        background: $color-5;
+		color: #fff !important; 
+}
+
+
+
+#footer .widget_calendar thead tr th {
+  color: rgba(255, 255, 255, 0.6); 
+}
+
+#footer .widget_calendar tbody tr td {
+  border-color: #8e8e8e;
+  color: white; 
+}
+ 
+#footer .widget_calendar tbody tr td#today {
+      border-color: $color-5;
+      background-color: $color-5;
+      color: $color-1;
+}
+
+ 
+/**
+ * Other Widgets
+ */
+.widget_rss ul li {
+	padding-bottom:30px;
+	&:last-child {
+		padding-bottom:0;
+	}
+	.rsswidget {
+    display: block;
+    line-height:1.6em;
+	}
+	.rss-date {
+		display:block;
+		font-size:15px;
+		padding-bottom:10px;
+	}
+	.rssSummary {
+		margin-bottom:10px;
+	}
+	cite {
+		font-size:15px;
+		font-weight:400;
+	}
+}
+.footer-widget form, 
+.footer-widget .calendar_wrap,
+.sidebar-box form, 
+.sidebar-box .calendar_wrap {
+	margin-bottom:50px;
+}
+.footer-widget .theme-select,
+.sidebar-box .theme-select {
+margin-top:10px;
+margin-bottom:5px;
+}
+.sidebar-box .searchform,
+.footer-widget .searchform,
+ {
+} 
+

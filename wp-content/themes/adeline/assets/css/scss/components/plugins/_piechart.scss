@@ -1,0 +1,117 @@
+.dpr-piechart {
+	position:relative;
+	text-align: center;
+	canvas{
+		position:absolute;
+		top: 0;
+		left: 50%;
+		max-width: 100%;
+		margin-bottom: 13px;
+		z-index: 1;
+		-webkit-transform: rotateY(180deg) translateX(50%);
+		-moz-transform: rotateY(180deg) translateX(50%);
+		-ms-transform: rotateY(180deg) translateX(50%);
+		transform: rotateY(180deg) translateX(50%);
+	}
+	.title-container {
+	 display:flex;
+	 align-items:center;
+	 justify-content:center;
+	}
+	.piechart-title {
+		font-size: 27px;
+		line-height: 27px;
+		margin:0;
+	}
+	.piechart-subtitle {
+		font-size: 17px;
+		line-height: 28px;
+		color:#424251;
+	}
+	i {
+		font-size: 45px;
+		color: $color-7;
+	}
+	.number-wrap {
+	display: inline-block;
+	}
+	.piechart-number {
+		font-size: 36px;
+		letter-spacing: -2px;
+		font-weight:500;
+		span {
+		font-size:70%;
+		padding-left:2px;
+		}
+	}
+	.bg-circle{
+		position:relative;
+		overflow: hidden;
+		width: 160px;
+		height: 160px;
+		line-height: 160px;
+		border-radius:50%;
+		margin: 0 auto;
+		margin-bottom: 22px;
+		&:before {
+			content: "";
+			position:absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border: 1px solid #e7e7e7;
+			border-radius:inherit;
+		}
+
+		> * {
+			line-height: inherit
+		}
+	}
+	.title-wrap {
+		text-align: center;
+	}
+	.title-wrap {
+		display: inline-block;
+	}
+	&.counterclock-wise-animation {
+		canvas{
+		-webkit-transform: rotateY(0) translateX(-50%);
+		-moz-transform: rotateY(0) translateX(-50%);
+		-ms-transform: rotateY(0) translateX(-50%);
+		transform: rotateY(0) translateX(-50%);
+		}
+	}
+	&.layout-3 {
+		.piechart-number {
+			display:inline-block;
+			height: inherit;
+			font-size:25px;
+		}
+		i {
+			font-size: 27px;
+			padding-right: 10px;
+		}
+	}
+	&.layout-2 {
+		i {
+			color: #292933;
+		}
+		.number-wrap{
+		padding-right:15px;
+		}
+		.title-wrap {
+		text-align: left;
+		}
+	}
+	&.layout-4 {
+		i {
+			padding-right:10px;
+			display:inline-block;
+			margin-top:-5px;
+		}
+		.title-wrap {
+		text-align: left;
+		}
+	}
+}
